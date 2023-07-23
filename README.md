@@ -10,12 +10,12 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 - Ensure to retain user's history context, when token usage is about to reach maximum token length (defined by extension setting `VSCode GPT: Model Max Tokens Length`) for provided model name it trims the messages by following FIFO logic - First in First Out
 - API Access token is stored in encrypted form and it's not as part of extension settings
 - You can create your own Encryption key to ensure further enhanced security for your access token
--- To provide your Encryption Key, please create a file at root directory of your workspace with name `vscodegpt.config.js` and provide the Encryption Key like below
-  ```javascript
-  module.exports = {
-    encryptionKey: "vscode2gpt112f9dbd8a37fe98421901"
-  };
-  ```
+  - To provide your Encryption Key, please create a file at root directory of your workspace with name `vscodegpt.config.js` and provide the Encryption Key like below
+    ```javascript
+    module.exports = {
+      encryptionKey: "vscode2gpt112f9dbd8a37fe98421901"
+    };
+    ```
 - Enhanced UI with capabilities like delete chat history and lot many options in Context Menu to work with working file
 - Ensure data privacy by sharing user prompts directly with the AI provider. It access OpenAI APIs directly from Visual Studio to get responses for your prompts without any middleware or third party integrations to train other models on your codebase
 
