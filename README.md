@@ -4,9 +4,9 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 
 ## Usage Screenshots
 
-<img src="./assets/extension-loading-state.png" alt="Extension animated loading state for API progress" width="48%" /> <img src="./assets/extension-initial-question.png" alt="Extension usage screenshot" width="48%" /> <img src="./assets/extension-code-question.png" alt="Extension usage screenshot" width="96%" />
+<img src="./assets-readme/extension-loading-state.png" alt="Extension animated loading state for API progress" width="48%" /> <img src="./assets-readme/extension-initial-question.png" alt="Extension usage screenshot" width="48%" /> <img src="./assets-readme/extension-code-question.png" alt="Extension usage screenshot" width="96%" />
 
--------
+---
 
 ## Features
 
@@ -17,13 +17,13 @@ This Visual Studio extension is designed to enhance the productivity of engineer
   - To provide your Encryption Key, please create a file at root directory of your workspace with name `vscodegpt.config.js` and provide the Encryption Key like below
     ```javascript
     module.exports = {
-      encryptionKey: "vscode2gpt112f9dbd8a37fe98421901"
+      encryptionKey: "vscode2gpt112f9dbd8a37fe98421901",
     };
     ```
 - Context Menu Commands(refer below first screenshot) to work with working file and option to write custom message/prompt for selected code in the editor (refer below second screenshot)
-  
-  <img src="./assets/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="48%" /> <img src="./assets/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="48%" />
-  
+
+  <img src="./assets-readme/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="48%" /> <img src="./assets-readme/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="48%" />
+
 - Flexibility to provide different model name available with your AI Provider and values for other supported parameters by the AI Provider
 - Ensure data privacy by sharing user prompts directly with the AI provider. It access OpenAI APIs directly from Visual Studio to get responses for your prompts without any middleware or third party integrations to train other models on your codebase
 
@@ -38,28 +38,30 @@ To start conversation with VSCode GPT you need to provide your AI Provider Acces
 - Open command palette by pressing `Cmd/Ctrl+Shift+P`
 - Search for `VSCode GPT` in the command palette to find all command available for extension
 - Look for `VSCode GPT: Set Access Key` and select the command to set the access key. Please refer below screenshot:
-  <img src="./assets/command-set-access-key.png" alt="Extension Set Access Key Command" />
+  <img src="./assets-readme/command-set-access-key.png" alt="Extension Set Access Key Command" />
 - You will see input box to enter the access key, paste the access key and hit `Return/Enter`. Please refer below screenshots:
   Screenshot before entering access key:
-  <img src="./assets/access-key-input.png" alt="Extension Set Access Key Inputbox" />
+  <img src="./assets-readme/access-key-input.png" alt="Extension Set Access Key Inputbox" />
 
   Screenshot post entering access key:
-  <img src="./assets/command-access-key-input.png" alt="Extension Set Access Key Inputbox with filled value" />
+  <img src="./assets-readme/command-access-key-input.png" alt="Extension Set Access Key Inputbox with filled value" />
 
 - If you want to remove your Access Key, then you can execute the command `VSCode GPT: Remove Access Key`. Please refer to below screenshot:
-  <img src="./assets/command-remove-access-key.png" alt="Extension Remove Access Key" />
-
+  <img src="./assets-readme/command-remove-access-key.png" alt="Extension Remove Access Key" />
 
 ## Extension Settings
 
 ### This extension contributes the following settings:
+
 #### Extension's settings screenshot:
-![Extension's settings screenshot](./assets/extension-settings.png)
+
+![Extension's settings screenshot](./assets-readme/extension-settings.png)
 
 #### Settings usage:
-- `VSCode GPT: Api Key`: Default: `OpenAI`: Allows you to select one of the AI Provider from  the predefined list.
+
+- `VSCode GPT: Api Key`: Default: `OpenAI`: Allows you to select one of the AI Provider from the predefined list.
 - `VSCode GPT: Max Tokens`: Default: `800`: Allow you to change the max tokens to be used for API response.
-- `VSCode GPT: Model Max Tokens Length`: Default: `4096`: Allow users to provide the maximum length of tokens allowed for the model in one request, going to be used for logic to trim chat history. Please look for  the maximum tokens allowed for the AI model you are using
+- `VSCode GPT: Model Max Tokens Length`: Default: `4096`: Allow users to provide the maximum length of tokens allowed for the model in one request, going to be used for logic to trim chat history. Please look for the maximum tokens allowed for the AI model you are using
 - `VSCode GPT: Model Name`: Default: `gpt-3.5-turbo`: Allows you to change Model name used for your AI provider.
 - `VSCode GPT: Temperature`: Default: `0.5`: Allows you to change the value for Temperature.
 - `VSCode GPT: Top_P`: Default: `0.6`: Allows you to change the value for Top_P.
