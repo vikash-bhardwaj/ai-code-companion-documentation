@@ -47,7 +47,7 @@ Currently working on launching a microsite with a data privacy page. In the mean
 
 ## License
 
-This extension is licensed under the [Mozilla Public License 2.0]([https://www.mozilla.org/en-US/MPL/2.0/#:~:text=If%20a%20copy%20of%20the,org%2FMPL%2F2.0%2F.]).
+This extension is licensed under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/#:~:text=If%20a%20copy%20of%20the,org%2FMPL%2F2.0%2F.).
 
 ## Known Issues
 
