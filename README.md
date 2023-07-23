@@ -1,6 +1,4 @@
-# `VSCode GPT`
-
-# Visual Studio Extension: One Stop Solution for Engineers and Architects
+# `VSCode GPT` - Visual Studio Code Extension: One Stop Solution for Engineers and Architects
 
 This Visual Studio extension is designed to enhance the productivity of engineers and architects by leveraging the power of OpenAI APIs. With this extension, users can access OpenAI APIs without worrying about their data privacy. The idea behind this plugin development is to ensure that user prompts are shared directly with the AI provider and no other third-party integration is used to train other models on your code.
 
