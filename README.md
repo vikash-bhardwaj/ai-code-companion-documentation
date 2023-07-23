@@ -2,6 +2,12 @@
 
 This Visual Studio extension is designed to enhance the productivity of engineers and architects by leveraging the power of OpenAI APIs. With this extension, users can access OpenAI APIs without worrying about their data privacy. The idea behind this plugin development is to ensure that user prompts are shared directly with the AI provider and no other third-party integration is used to train other models on your code.
 
+-------
+
+<img src="./assets/extension-loading-state.png" alt="Extension animated loading state for API progress" width="400" /> <img src="./assets/extension-initial-question.png" alt="Extension usage screenshot" width="400" /> <img src="./assets/extension-code-question-partial.png" alt="Extension usage screenshot" width="400" />
+
+-------
+
 ## Features
 
 - Ensure to retain the separate context of your chat history per project workspace (This helps engineers to work with separate projects without mixing the chat)
@@ -37,7 +43,7 @@ To start conversation with VSCode GPT you need to provide your AI Provider Acces
 - You will see input box to enter the access key, paste the access key and hit `Return/Enter`. Please refer below screenshots:
   ![Access Key Input screenshot for providing AI Provider Access key](./assets/access-key-input.png)
 
-### This extension contributes the following settings for it's users:
+### This extension contributes the following settings:
 #### Extension's settings screenshot:
 ![Extension's settings screenshot](./assets/extension-settings.png)
 
