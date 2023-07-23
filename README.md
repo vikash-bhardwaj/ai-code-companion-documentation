@@ -4,7 +4,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 
 -------
 
-<img src="./assets/extension-loading-state.png" alt="Extension animated loading state for API progress" width="400" /> <img src="./assets/extension-initial-question.png" alt="Extension usage screenshot" width="400" /> <img src="./assets/extension-code-question-partial.png" alt="Extension usage screenshot" width="400" />
+<img src="./assets/extension-loading-state.png" alt="Extension animated loading state for API progress" width="400" /> <img src="./assets/extension-initial-question.png" alt="Extension usage screenshot" width="400" /> <img src="./assets/extension-code-question-partial.png" alt="Extension usage screenshot" width="400" /> <img src="./assets/extension-code-question.png" alt="Extension usage screenshot" width="400" />
 
 -------
 
