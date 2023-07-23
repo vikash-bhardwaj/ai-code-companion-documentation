@@ -31,7 +31,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 
 This extension require a access token to use the OpenAI provider's APIs hence be aware on the usage and cost of the provided access token.
 
-## Set-up your AI Provider Access Key for VSCode GPT to communicate to the APIs
+## Set-up your AI Provider Access Key for VSCode GPT to communicate with AI Provider API
 
 To start conversation with VSCode GPT you need to provide your AI Provider Access Key by using below steps:
 
