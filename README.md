@@ -41,10 +41,10 @@ To start conversation with VSCode GPT you need to provide your AI Provider Acces
   <img src="./assets/command-set-access-key.png" alt="Extension Set Access Key Command" />
 - You will see input box to enter the access key, paste the access key and hit `Return/Enter`. Please refer below screenshots:
   Screenshot before entering access key:
-  <img src="./assets/command-access-key-input.png" alt="Extension Set Access Key Inputbox" />
+  <img src="./assets/access-key-input.png" alt="Extension Set Access Key Inputbox" />
 
   Screenshot post entering access key:
-  <img src="./assets/access-key-input.png" alt="Extension Set Access Key Inputbox with filled value" />
+  <img src="./assets/command-access-key-input.png" alt="Extension Set Access Key Inputbox with filled value" />
 
 ## Extension Settings
 
