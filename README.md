@@ -19,7 +19,7 @@ This extension require a access token to use the OpenAI provider's APIs hence be
 
 ## Extension Settings
 
-### Set-up your Access Key for AI Provider to used
+### Set-up your AI Provider Access Key for VSCode GPT to communicate to the APIs
 
 To start conversation with VSCode GPT you need to provide your AI Provider Access Key by using below steps:
 
@@ -27,12 +27,16 @@ To start conversation with VSCode GPT you need to provide your AI Provider Acces
 - Search for `VSCode GPT` in the command palette to find all command available for extension
 - Look for `VSCode GPT: Set Access Key` and select the command to set the access key
 - You will see input box to enter the access key, paste the access key and hit `Return/Enter`. Please refer below screenshots:
-  ![Access Key Input for providing AI Provider Access key](./assets/access-key-input.png)
+  ![Access Key Input screenshot for providing AI Provider Access key](./assets/access-key-input.png)
 
-This extension contributes the following settings for it's users:
+### This extension contributes the following settings for it's users:
+#### Extension's settings screenshot:
+![Extension's settings screenshot](./assets/extension-settings.png)
 
-- `VSCode GPT: Api Key`: Default: `OpenAI`: Allows you to select one the AI Provider.
+#### Settings usage:
+- `VSCode GPT: Api Key`: Default: `OpenAI`: Allows you to select one of the AI Provider from  the predefined list.
 - `VSCode GPT: Max Tokens`: Default: `800`: Allow you to change the max tokens to be used for API response.
+- `VSCode GPT: Model Max Tokens Length`: Default: `4096`: Allow users to provide the maximum length of tokens allowed for the model in one request, going to be used for logic to trim chat history. Please look for  the maximum tokens allowed for the AI model you are using
 - `VSCode GPT: Model Name`: Default: `gpt-3.5-turbo`: Allows you to change Model name used for your AI provider.
 - `VSCode GPT: Temperature`: Default: `0.5`: Allows you to change the value for Temperature.
 - `VSCode GPT: Top_P`: Default: `0.6`: Allows you to change the value for Top_P.
