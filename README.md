@@ -13,16 +13,6 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 - Enhanced UI with capabilities like delete chat history and lot many options in Context Menu to work with working file
 - Ensure data privacy by sharing user prompts directly with the AI provider. It access OpenAI APIs directly from Visual Studio to get responses for your prompts without any middleware or third party integrations to train other models on your codebase
 
-## Roadmap Features
-
-- Along with any minor fixes main target is to integrate other AI providers in increase the reach for community
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
 ## Requirements
 
 This extension require a access token to use the OpenAI provider's APIs hence be aware on the usage and cost of the provided access token.
