@@ -19,6 +19,16 @@ This extension require a access token to use the OpenAI provider's APIs hence be
 
 ## Extension Settings
 
+### Set-up your Access Key for AI Provider to used
+
+To start conversation with VSCode GPT you need to provide your AI Provider Access Key by using below steps:
+
+- Open command palette by pressing `Cmd/Ctrl+Shift+P`
+- Search for `VSCode GPT` in the command palette to find all command available for extension
+- Look for `VSCode GPT: Set Access Key` and select the command to set the access key
+- You will see input box to enter the access key, paste the access key and hit `Return/Enter`. Please refer below screenshots:
+  ![Image Description](../assets/access-key-input.png)
+
 This extension contributes the following settings for it's users:
 
 - `VSCode GPT: Api Key`: Default: `OpenAI`: Allows you to select one the AI Provider.
