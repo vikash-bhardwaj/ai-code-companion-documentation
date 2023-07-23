@@ -24,7 +24,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
   
   <img src="./assets/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="48%" /> <img src="./assets/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="48%" />
   
-- Flexibility to provide different available model name and values for other supported parameters by the AI Provider
+- Flexibility to provide different model name available with your AI Provider and values for other supported parameters by the AI Provider
 - Ensure data privacy by sharing user prompts directly with the AI provider. It access OpenAI APIs directly from Visual Studio to get responses for your prompts without any middleware or third party integrations to train other models on your codebase
 
 ## Requirements
@@ -45,6 +45,9 @@ To start conversation with VSCode GPT you need to provide your AI Provider Acces
 
   Screenshot post entering access key:
   <img src="./assets/command-access-key-input.png" alt="Extension Set Access Key Inputbox with filled value" />
+
+- If you want to remove your Access Key, then you can execute the command `VSCode GPT: Remove Access Key`. Please refer to below screenshot:
+  <img src="./assets/command-remove-access-key.png" alt="Extension Remove Access Key" />
 
 
 ## Extension Settings
