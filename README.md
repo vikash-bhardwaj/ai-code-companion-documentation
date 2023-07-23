@@ -3,7 +3,6 @@
 This Visual Studio extension is designed to enhance the productivity of engineers and architects by leveraging the power of OpenAI APIs. With this extension, users can access OpenAI APIs without worrying about their data privacy. The idea behind this plugin development is to ensure that user prompts are shared directly with the AI provider and no other third-party integration is used to train other models on your code.
 
 ## Usage Screenshots
--------
 
 <img src="./assets/extension-loading-state.png" alt="Extension animated loading state for API progress" width="48%" /> <img src="./assets/extension-initial-question.png" alt="Extension usage screenshot" width="48%" /> <img src="./assets/extension-code-question.png" alt="Extension usage screenshot" width="96%" />
 
