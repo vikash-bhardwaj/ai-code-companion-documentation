@@ -16,7 +16,8 @@ This Visual Studio extension is designed to enhance the productivity of engineer
       encryptionKey: "vscode2gpt112f9dbd8a37fe98421901"
     };
     ```
-- Enhanced UI with capabilities like delete chat history and lot many options in Context Menu to work with working file
+- Context Menu to work with working file and option write custom message/prompt for selected code in the editor
+  ![Extension predefined commands for selected code via Context Menu ](./assets/extension-context-menu.png) ![Extension Capability to add custom prompt/message for selected code](./assets/extension-selection-command.png)
 - Ensure data privacy by sharing user prompts directly with the AI provider. It access OpenAI APIs directly from Visual Studio to get responses for your prompts without any middleware or third party integrations to train other models on your codebase
 
 ## Requirements
