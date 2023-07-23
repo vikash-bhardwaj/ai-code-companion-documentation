@@ -17,6 +17,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
     };
     ```
 - Context Menu to work with working file and option write custom message/prompt for selected code in the editor
+  <img src="./assets/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="400" />
   ![Extension predefined commands for selected code via Context Menu ](./assets/extension-context-menu.png) ![Extension Capability to add custom prompt/message for selected code](./assets/extension-selection-command.png)
 - Ensure data privacy by sharing user prompts directly with the AI provider. It access OpenAI APIs directly from Visual Studio to get responses for your prompts without any middleware or third party integrations to train other models on your codebase
 
