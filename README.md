@@ -43,11 +43,11 @@ To start conversation with VSCode GPT you need to provide your AI Provider Acces
 
 ## Contributing
 
-I'm are currently working on launching a microsite with a data privacy page. In the meantime, if you would like to enquire about project, please feel free to reach out to me at vscodegpt@gmail.com.
+Currently working on launching a microsite with a data privacy page. In the meantime, if you would like to enquire about project, please feel free to reach out to me at vscodegpt@gmail.com.
 
 ## License
 
-This extension is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This extension is licensed under the [Mozilla Public License 2.0]([https://opensource.org/licenses/MIT](https://www.mozilla.org/en-US/MPL/2.0/#:~:text=If%20a%20copy%20of%20the,org%2FMPL%2F2.0%2F.)).
 
 ## Known Issues
 
