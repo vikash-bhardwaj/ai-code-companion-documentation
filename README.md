@@ -72,7 +72,7 @@ This extension is licensed under the [Mozilla Public License 2.0](https://www.mo
 
 ## Privacy Policy
 
-[Link to Privacy Policy](https://example.com/privacy-policy)
+[Link to Privacy Policy](https://vikash-bhardwaj.github.io/vscode-gpt-documentation/privacy-policy)
 
 This extension collects certain data for the purpose of interacting with APIs provided by AI Provider selected by user, default AI provider is OpenAI. We are committed to protecting your privacy and handling your data securely. Please review our privacy policy for more information on how we collect, use, and protect your data. if you would like to enquire about project, please feel free to reach out to us at vscodegpt@gmail.com.
 
