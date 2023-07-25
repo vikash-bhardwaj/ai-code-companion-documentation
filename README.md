@@ -82,7 +82,8 @@ Not knows as of now unless I get from you
 
 ## Release Notes
 
-### 0.0.1
+### 1.0.0
 
-Initial release of VSCode GPT
+Initial release of the extension
+
 **Enjoy!**
