@@ -66,13 +66,15 @@ To start conversation with VSCode GPT you need to provide your AI Provider Acces
 - `VSCode GPT: Temperature`: Default: `0.5`: Allows you to change the value for Temperature.
 - `VSCode GPT: Top_P`: Default: `0.6`: Allows you to change the value for Top_P.
 
-## Contributing
-
-Currently working on launching a microsite with a data privacy page. In the meantime, if you would like to enquire about project, please feel free to reach out to me at vscodegpt@gmail.com.
-
 ## License
 
 This extension is licensed under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/#:~:text=If%20a%20copy%20of%20the,org%2FMPL%2F2.0%2F.).
+
+## Privacy Policy
+
+[Link to Privacy Policy](https://example.com/privacy-policy)
+
+This extension collects certain data for the purpose of interacting with APIs provided by AI Provider selected by user, default AI provider is OpenAI. We are committed to protecting your privacy and handling your data securely. Please review our privacy policy for more information on how we collect, use, and protect your data. if you would like to enquire about project, please feel free to reach out to us at vscodegpt@gmail.com.
 
 ## Known Issues
 
