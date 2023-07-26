@@ -1,4 +1,4 @@
-# `VSCode GPT` - Visual Studio Code Extension: One Stop Solution for Engineers and Architects
+# `Code Companion` - Visual Studio Code Extension: One Stop Solution for Engineers and Architects
 
 This Visual Studio extension is designed to enhance the productivity of engineers and architects by leveraging the power of OpenAI APIs. With this extension, users can access OpenAI APIs without worrying about their data privacy. The idea behind this plugin development is to ensure that user prompts are shared directly with the AI provider and no other third-party integration is used to train other models on your code.
 
@@ -11,10 +11,10 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 ## Features
 
 - Ensure to retain the separate context of your chat history per project workspace (This helps engineers to work with separate projects without mixing the chat)
-- Ensure to retain user's history context, when token usage is about to reach maximum token length (defined by extension setting `VSCode GPT: Model Max Tokens Length`) for provided model name it trims the messages by following FIFO logic - First in First Out
+- Ensure to retain user's history context, when token usage is about to reach maximum token length (defined by extension setting `Code Companion: Model Max Tokens Length`) for provided model name it trims the messages by following FIFO logic - First in First Out
 - API Access token is stored in encrypted form and it's not as part of extension settings
 - You can create your own Encryption key to ensure further enhanced security for your access token
-  - To provide your Encryption Key, please create a file at root directory of your workspace with name `vscodegpt.config.js` and provide the Encryption Key like below
+  - To provide your Encryption Key, please create a file at root directory of your workspace with name `.codecompanion.config.js` and provide the Encryption Key like below
     ```javascript
     module.exports = {
       encryptionKey: "vscode2gpt112f9dbd8a37fe98421901",
@@ -31,13 +31,13 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 
 This extension require a access token to use the OpenAI provider's APIs hence be aware on the usage and cost of the provided access token.
 
-## Set-up your AI Provider Access Key for VSCode GPT to communicate with AI Provider API
+## Set-up your AI Provider Access Key for `Code Companion` to communicate with AI Provider API
 
-To start conversation with VSCode GPT you need to provide your AI Provider Access Key by using below steps:
+To start conversation with `Code Companion` you need to provide your AI Provider Access Key by using below steps:
 
 - Open command palette by pressing `Cmd/Ctrl+Shift+P`
-- Search for `VSCode GPT` in the command palette to find all command available for extension
-- Look for `VSCode GPT: Set Access Key` and select the command to set the access key. Please refer below screenshot:
+- Search for `Code Companion` in the command palette to find all command available for extension
+- Look for `Code Companion: Set Access Key` and select the command to set the access key. Please refer below screenshot:
   <img src="./assets-readme/command-set-access-key.png" alt="Extension Set Access Key Command" />
 - You will see input box to enter the access key, paste the access key and hit `Return/Enter`. Please refer below screenshots:
   Screenshot before entering access key:
@@ -46,7 +46,7 @@ To start conversation with VSCode GPT you need to provide your AI Provider Acces
   Screenshot post entering access key:
   <img src="./assets-readme/command-access-key-input.png" alt="Extension Set Access Key Inputbox with filled value" />
 
-- If you want to remove your Access Key, then you can execute the command `VSCode GPT: Remove Access Key`. Please refer to below screenshot:
+- If you want to remove your Access Key, then you can execute the command `Code Companion: Remove Access Key`. Please refer to below screenshot:
   <img src="./assets-readme/command-remove-access-key.png" alt="Extension Remove Access Key" />
 
 ## Extension Settings
@@ -59,12 +59,12 @@ To start conversation with VSCode GPT you need to provide your AI Provider Acces
 
 #### Settings usage:
 
-- `VSCode GPT: Api Key`: Default: `OpenAI`: Allows you to select one of the AI Provider from the predefined list.
-- `VSCode GPT: Max Tokens`: Default: `800`: Allow you to change the max tokens to be used for API response.
-- `VSCode GPT: Model Max Tokens Length`: Default: `4096`: Allow users to provide the maximum length of tokens allowed for the model in one request, going to be used for logic to trim chat history. Please look for the maximum tokens allowed for the AI model you are using
-- `VSCode GPT: Model Name`: Default: `gpt-3.5-turbo`: Allows you to change Model name used for your AI provider.
-- `VSCode GPT: Temperature`: Default: `0.5`: Allows you to change the value for Temperature.
-- `VSCode GPT: Top_P`: Default: `0.6`: Allows you to change the value for Top_P.
+- `Code Companion: Api Key`: Default: `OpenAI`: Allows you to select one of the AI Provider from the predefined list.
+- `Code Companion: Max Tokens`: Default: `800`: Allow you to change the max tokens to be used for API response.
+- `Code Companion: Model Max Tokens Length`: Default: `4096`: Allow users to provide the maximum length of tokens allowed for the model in one request, going to be used for logic to trim chat history. Please look for the maximum tokens allowed for the AI model you are using
+- `Code Companion: Model Name`: Default: `gpt-3.5-turbo`: Allows you to change Model name used for your AI provider.
+- `Code Companion: Temperature`: Default: `0.5`: Allows you to change the value for Temperature.
+- `Code Companion: Top_P`: Default: `0.6`: Allows you to change the value for Top_P.
 
 ## License
 
@@ -74,7 +74,7 @@ This extension is licensed under the [Mozilla Public License 2.0](https://www.mo
 
 [Link to Privacy Policy](https://vikash-bhardwaj.github.io/vscode-gpt-documentation/privacy-policy)
 
-This extension collects certain data for the purpose of interacting with APIs provided by AI Provider selected by user, default AI provider is OpenAI. We are committed to protecting your privacy and handling your data securely. Please review our privacy policy for more information on how we collect, use, and protect your data. if you would like to enquire about project, please feel free to reach out to us at vscodegpt@gmail.com.
+This extension collects certain data for the purpose of interacting with APIs provided by AI Provider selected by user, default AI provider is OpenAI. We are committed to protecting your privacy and handling your data securely. Please review our privacy policy for more information on how we collect, use, and protect your data. if you would like to enquire about project, please feel free to reach out to us at codecompanion@gmail.com.
 
 ## Known Issues
 
