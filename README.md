@@ -31,11 +31,16 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 
 This extension require a access token to use the OpenAI provider's APIs hence be aware on the usage and cost of the provided access token.
 
-## Set-up your AI Provider Access Key for AI Code Companion to communicate with AI Provider API
+### Where to get the access token/key?
+
+- if you are using OpenAI Platform (platform.openai.com)[https://platform.openai.com] then after login to the platform with your credentials visit to Manage Account section and look for "User" section and click on "(API Keys)[https://platform.openai.com/account/api-keys]". Generate your new Access Token/Key for using with the extension.
+- if you are using PSChat Platform then after login to the platform with your credentials visit to "Personal Access Tokens" section under developer section. Generate your new Access Token/Key for using with the extension.
+
+## Set up your AI Provider Access Key for AI Code Companion to Communicate with AI Provider API
 
 To start conversation with AI Code Companion you need to provide your AI Provider Access Key by using below steps:
 
-- Open command palette by pressing `Cmd/Ctrl+Shift+P`
+- Open command palette by pressing `Cmd/Ctrl+Shift+P` from Visual Studio Code to open command palette
 - Search for `AI Code Companion` in the command palette to find all command available for extension
 - Look for `AI Code Companion: Set Access Key` and select the command to set the access key. Please refer below screenshot:
   <img src="./assets-readme/command-set-access-key.png" alt="Extension Set Access Key Command" />
