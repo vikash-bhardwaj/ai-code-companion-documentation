@@ -33,7 +33,7 @@ This extension require a access token to use the OpenAI provider's APIs hence be
 
 ### Where to get the access token/key?
 
-- if you are using OpenAI Platform (platform.openai.com)[https://platform.openai.com] then after login to the platform with your credentials visit to Manage Account section and look for "User" section and click on "(API Keys)[https://platform.openai.com/account/api-keys]". Generate your new Access Token/Key for using with the extension.
+- if you are using OpenAI Platform [platform.openai.com](https://platform.openai.com) then after login to the platform with your credentials visit to Manage Account section and look for "User" section and click on "[API Keys](https://platform.openai.com/account/api-keys)". Generate your new Access Token/Key for using with the extension.
 - if you are using PSChat Platform then after login to the platform with your credentials visit to "Personal Access Tokens" section under developer section. Generate your new Access Token/Key for using with the extension.
 
 ## Set up your AI Provider Access Key for AI Code Companion to Communicate with AI Provider API
