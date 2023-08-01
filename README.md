@@ -87,8 +87,12 @@ Not knows as of now unless I get from you
 
 ## Release Notes
 
-### 1.0.0
+### [1.1.0]
 
-Initial release of the extension
+- Added support for older versions of VS Code, starting with 1.74.0.
+
+### [1.0.0]
+
+- Initial release of the extension
 
 **Enjoy!**
