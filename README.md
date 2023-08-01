@@ -2,8 +2,13 @@
 
 This Visual Studio extension is designed to enhance the productivity of engineers and architects by leveraging the power of OpenAI APIs. With this extension, users can access OpenAI APIs without worrying about their data privacy. The idea behind this plugin development is to ensure that user prompts are shared directly with the AI provider and no other third-party integration is used to train other models on your code.
 
-## Usage Screenshots
+## Usage
 
+### Installation and Set-up
+- Install the extension either by visiting Visual Studio Code [marketplace page](https://marketplace.visualstudio.com/items?itemName=vikash-bhardwaj.aicodecompanion) or search the extension in the "Extensions" activity bar tab with name "AI Code Companion" by vikash-bhardwaj
+- Post installation please refer to the below [set-up section](#set-up)
+
+### Usage Screenshots
 <img src="./assets-readme/extension-loading-state.png" alt="Extension animated loading state for API progress" width="48%" /> <img src="./assets-readme/extension-initial-question.png" alt="Extension usage screenshot" width="48%" /> <img src="./assets-readme/extension-code-question.png" alt="Extension usage screenshot" width="96%" />
 
 ---
@@ -36,7 +41,7 @@ This extension require a access token to use the OpenAI provider's APIs hence be
 - if you are using OpenAI Platform [platform.openai.com](https://platform.openai.com) then after login to the platform with your credentials visit to Manage Account section and look for "User" section and click on "[API Keys](https://platform.openai.com/account/api-keys)". Generate your new Access Token/Key for using with the extension.
 - if you are using PSChat Platform then after login to the platform with your credentials visit to "Personal Access Tokens" section under developer section. Generate your new Access Token/Key for using with the extension.
 
-## Set up your AI Provider Access Key for AI Code Companion to Communicate with AI Provider API
+## <a name="setup"></a>Set up your AI Provider Access Key for AI Code Companion to Communicate with AI Provider API
 
 To start conversation with AI Code Companion you need to provide your AI Provider Access Key by using below steps:
 
