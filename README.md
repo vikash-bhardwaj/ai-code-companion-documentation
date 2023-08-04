@@ -32,7 +32,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
     - You can use single line comments or multi line comments to provide prompts/queries. Please use keyboard shortcut `Ctrl+Alt+Enter/Return` from any line in the comment to executing the Inline prompts with `AI Code Companion`.
     - To keep the easy access to history for inline prompts, extension will add the responses to the chat window if it's in focus, if chat window is not in focus then the responses will be generated in new file.
     - Please note that Inline prompts are not maintained in AI Provider chat history and only maintained in chat window. Each inline prompt will be treated as new prompt to AI provider, this is to allow bigger prompts and leave space for maximum tokens to be used in responses.
-    - Intutive approach to check the progress for Inline Prompts execution, you can check the status of API either with help of inline icon ⌛ (&#8987;) or look for API progress in status bar. (refer third and fourth screenshot for refernce)
+    - Intutive approach to check the progress for Inline Prompts execution, you can check the status of API either with help of inline icon (&#8987;) or look for API progress in status bar. (refer third and fourth screenshot for refernce)
 
     <img src="./assets-readme/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="48%" /> <img src="./assets-readme/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="48%" />
 
@@ -48,7 +48,7 @@ This extension require a access token to use the OpenAI provider's APIs hence be
 - if you are using OpenAI Platform [platform.openai.com](https://platform.openai.com) then after login to the platform with your credentials visit to Manage Account section and look for "User" section and click on "[API Keys](https://platform.openai.com/account/api-keys)". Generate your new Access Token/Key for using with the extension.
 - if you are using PSChat Platform then after login to the platform with your credentials visit to "Personal Access Tokens" section under developer section. Generate your new Access Token/Key for using with the extension.
 
-## <a name="setup"></a>Set up your AI Provider Access Key for AI Code Companion to Communicate with AI Provider API
+## <a name="setup"></a>Set up your AI Provider Access Key for AI Code Companion to Communicate with AI Provider's API
 
 To start conversation with AI Code Companion you need to provide your AI Provider Access Key by using below steps:
 
