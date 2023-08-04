@@ -15,21 +15,28 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 
 ## Features
 
-- Ensure to retain the separate context of your chat history per project workspace (This helps engineers to work with separate projects without mixing the chat)
+- Ensure to retain the separate context of your chat history per project workspace (This helps engineers to work with separate projects without mixing the chat context)
 - Ensure to retain user's history context, when token usage is about to reach maximum token length (defined by extension setting `AI Code Companion: Model Max Tokens Length`) for provided model name it trims the messages by following FIFO logic - First in First Out
 - API Access token is stored in encrypted form and it's not as part of extension settings
-- You can create your own Encryption key to ensure further enhanced security for your access token
+- If needed you can create your own Encryption key to ensure further enhanced security for your access token
   - To provide your Encryption Key, please create a file at root directory of your workspace with name `.aicodecompanion.config.js` and provide the Encryption Key like below
     ```javascript
     module.exports = {
       encryptionKey: "vscode2gpt112f9dbd8a37fe98421901",
     };
     ```
-- Context Menu Commands(refer below first screenshot) to work with working file and option to write custom message/prompt for selected code in the editor (refer below second screenshot)
+- Multiple options to interact with AI provider for asking questions and increase productity:
+  - Context Menu Commands for quick access to common tasks like refactor code, find issues, explain and document code etc. Select the code in file and right click to access these commands. (refer below first screenshot).
+  - Flexibility to write custom prompts/queries to ask AI Provider and same can be done to add more context for selected code in the editor. Ask anything based on your prompt for the selected code to achieve complex requirements like code refactoring, writing test cases, extend the code based on provided requirements, find issues, documentation etc. (refer below second screenshot)
+  - Flexibility to ask questions in form of inline code comments from editor:
+    - You can use single line comments or multi line comments to provide prompts/queries. Please use keyboard shortcut `Ctrl+Alt+Enter/Return` from any line in the comment to executing the Inline prompts with `AI Code Companion`.
+    - To keep the easy access to history for inline prompts, extension will add the responses to the chat window if it's in focus, if chat window is not in focus then the responses will be generated in new file.
+    - Please note that Inline prompts are not maintained in AI Provider chat history and only maintained in chat window. Each inline prompt will be treated as new prompt to AI provider, this is to allow bigger prompts and leave space for maximum tokens to be used in responses.
+    - Intutive approach to check the progress for Inline Prompts execution, you can check the status of API either with help of inline icon ⌛ (&#8987;) or look for API progress in status bar. (refer third and fourth screenshot for refernce)
 
-  <img src="./assets-readme/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="48%" /> <img src="./assets-readme/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="48%" />
+    <img src="./assets-readme/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="48%" /> <img src="./assets-readme/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="48%" />
 
-- Flexibility to provide different model name available with your AI Provider and values for other supported parameters by the AI Provider
+- Flexibility to provide different model names available with your AI Provider and other supported parameters by the AI Provider.
 - Ensure data privacy by sharing user prompts directly with the AI provider. It access OpenAI APIs directly from Visual Studio to get responses for your prompts without any middleware or third party integrations to train other models on your codebase
 
 ## Requirements
