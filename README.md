@@ -50,7 +50,7 @@ This extension require a access token to use the OpenAI provider's APIs hence be
 
 ## <a name="setup"></a>Set up your AI Provider Access Key for AI Code Companion to Communicate with AI Provider's API
 
-To start conversation with AI Code Companion you need to provide your AI Provider Access Key by using below steps, please refer to [above section](#setup) to find steps to get Access Key:
+To start conversation with AI Code Companion you need to provide your AI Provider Access Key by using below steps, please refer to [above section](#get-your-key) to find steps to get Access Key:
 
 - Open command palette by pressing `Cmd/Ctrl+Shift+P` from Visual Studio Code
 - Search for `AI Code Companion` in the command palette to find all commands available for extension
