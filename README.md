@@ -7,6 +7,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 ### Installation and Set-up
 - Install the extension either by visiting Visual Studio Code [marketplace page](https://marketplace.visualstudio.com/items?itemName=vikash-bhardwaj.aicodecompanion) or search the extension in the "Extensions" activity bar tab with name "AI Code Companion" by vikash-bhardwaj
 - Post installation please refer to the below [set-up section](#setup)
+- Post setting up the accesskey for your selcted AI provider please ensure you also check the 
 
 ### Usage Screenshots
 <img src="./assets-readme/extension-splash-screen.png" alt="Extension splash screen screenshot" width="24%" /> <img src="./assets-readme/extension-loading-state.png" alt="Extension animated loading state for API progress" width="24%" /> <img src="./assets-readme/extension-initial-question.png" alt="Extension usage screenshot" width="24%" /> <img src="./assets-readme/extension-code-question.png" alt="Extension usage screenshot" width="24%" />
@@ -26,7 +27,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
     - Please note that Inline prompts are not maintained in AI Provider chat history and only maintained in chat window. Each inline prompt will be treated as new prompt to AI provider, this is to allow bigger prompts and leave space for maximum tokens to be used in responses.
     - Intutive approach to check the progress for Inline Prompts execution, you can check the status of API either with help of inline icon (&#8987;) or look for API progress in status bar. (refer third and fourth screenshot for refernce)
 
-    <img src="./assets-readme/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="33%" /> <img src="./assets-readme/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="33%" /> <img src="./assets-readme/extension-inline-comments-api-progress.jpg" alt="Extension Capability show progress for Inline Comments API Calls" width="65%" />
+    <img src="./assets-readme/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="33%" /> <img src="./assets-readme/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="33%" /> <img src="./assets-readme/extension-inline-comments-api-progress.jpg" alt="Extension Capability show progress for Inline Comments API Calls" width="66%" />
 
 - Flexibility to provide different model names available with your AI Provider and other supported parameters by the AI Provider.
 - Provides intutive buttons with every codeblock in the AI responses for easily copying the codeblocks, creating new file with codeblocks or insert codeblocks at cursor position/selected code (refer below screenshot).
@@ -60,6 +61,8 @@ This extension require a access token to use the OpenAI provider's APIs hence be
 
 To start conversation with AI Code Companion you need to provide your AI Provider Access Key by using below steps, please refer to [above section](#get-your-key) to find steps to get Access Key:
 
+- Check if you have right AI provider selected in the extension settings, look for setting `AI Code Companion: Api Key` dropdown.
+- If you have multiple AI provider and you want to use separate AI provider for different projects then please change the AI provider in the `Workspace` settings. Workspace settings will overwrite the user's settings.
 - Open command palette by pressing `Cmd/Ctrl+Shift+P` from Visual Studio Code
 - Search for `AI Code Companion` in the command palette to find all commands available for extension
 - Look for `AI Code Companion: Set Access Key` and select the command to set the access key. Please refer below screenshot:
@@ -73,6 +76,7 @@ To start conversation with AI Code Companion you need to provide your AI Provide
 
 - If you want to remove your Access Key, then you can execute the command `AI Code Companion: Remove Access Key`. Please refer to below screenshot:
   <img src="./assets-readme/command-remove-access-key.png" alt="Extension Remove Access Key" />
+- Please note that model names are different between OpenAI and PSChat AI Providers so please validate you have correct model name for selcted AI Provider
 
 ## Extension Settings
 
@@ -107,6 +111,21 @@ Not knows as of now unless I get from you
 
 ## Release Notes
 
+### [1.2.0] (Yet to be published)
+
+#### New Features:
+- Added capability to use Inline Comments (both single and multi line comments) for asking AI Provider. Use keyboard shortcut `Ctrl+Alt+Enter/Return` from any line of your comment to ask questions. For progress bar/loading state please refer above features section
+- Added capability to create new files from codeblocks
+- Added capability to insert the code from codeblocks to working file
+- Added capability to cancel the API requests, please refer above features section for more details
+
+#### Experience Improvements:
+- Ability to maintain the chatbox scroll position, in previous version it always used to scroll at the end of messages
+- Ability to add line breaks in the Prompt Inputbox to change existing message, in previous version `Shift+Enter/Return` was always forcing cursor at the end of message but user should be able to edit the message to add line breaks anywhere and cursor will remain in focus too with line breaks.
+- Increased the height for Inputbox
+- Fixed the Send Button alignment for smaller viewports,send button gets shifted to next lien for smaller viewpport. In previous version button was getting cropped
+- Fixed few defects
+  
 ### [1.1.0]
 
 - Added support for older versions of VS Code, starting with 1.74.0.
