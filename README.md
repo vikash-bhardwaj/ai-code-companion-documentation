@@ -107,7 +107,7 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 ## Known Issues
 
-Not knows as of now unless I get from you
+Not known as of now unless I get from you
 
 ## Release Notes
 
