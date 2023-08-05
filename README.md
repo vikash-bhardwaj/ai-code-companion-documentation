@@ -109,7 +109,7 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 Not known as of now unless I get from you
 
-## Release Notes
+## <a name="release-notes"></a>Release Notes
 
 ### [1.2.0] (Yet to be published)
 
