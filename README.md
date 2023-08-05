@@ -9,14 +9,34 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 - Post installation please refer to the below [set-up section](#setup)
 
 ### Usage Screenshots
-<img src="./assets-readme/extension-splash-screen.png" alt="Extension usage screenshot" width="32%" /> <img src="./assets-readme/extension-loading-state.png" alt="Extension animated loading state for API progress" width="32%" /> <img src="./assets-readme/extension-initial-question.png" alt="Extension usage screenshot" width="32%" /> <img src="./assets-readme/extension-code-question.png" alt="Extension usage screenshot" width="95%" />
+<img src="./assets-readme/extension-splash-screen.png" alt="Extension usage screenshot" width="32%" /> <img src="./assets-readme/extension-loading-state.png" alt="Extension animated loading state for API progress" width="32%" /> <img src="./assets-readme/extension-initial-question.png" alt="Extension usage screenshot" width="32%" /> <img src="./assets-readme/extension-code-question.png" alt="Extension usage screenshot" width="96%" />
 
 ---
 
 ## Features
 
-- Ensure to retain the separate context of your chat history per project workspace (This helps engineers to work with separate projects without mixing the chat context)
-- Ensure to retain user's history context, when token usage is about to reach maximum token length (defined by extension setting `AI Code Companion: Model Max Tokens Length`) for provided model name it trims the messages by following FIFO logic - First in First Out
+- Ensure to retain the separate context of your chat history per project workspace (This helps users to work with separate projects without mixing the chat context)
+- Ensure auto trimming of user's history context to have seamless experience, when token usage for the API is about to reach maximum token length (defined by extension setting `AI Code Companion: Model Max Tokens Length`) for provided model name it trims the messages by following FIFO logic - First in First Out
+- Multiple options to interact with AI provider for asking questions and increase productity:
+  - Context Menu Commands for quick access to common tasks like refactor code, find issues, explain and document code etc. Select the code in file and right click to access these commands. (refer below first screenshot).
+  - Flexibility to write custom prompts/queries to ask AI Provider and same can be done to add more context for selected code in the editor. No need to switch to other windows as extension provides interactive approach to provide complex requirements for your code in the editor itself, just select the code and ask AI provider to achieve complex tasks for selected code like writing test cases, understanding the code, refactoring & optimizing the code and this call gets further improved with retained context in the chat history. (refer below second screenshot)
+  - Flexibility to ask questions in form of inline code comments from editor:
+    - You can use single line comments or multi line comments to provide prompts/queries. Please use keyboard shortcut `Ctrl+Alt+Enter/Return` from any line in the comment to executing the Inline prompts with `AI Code Companion`.
+    - To keep the easy access to history for responses for inline prompts, extension will add the responses to the chat window if it's in focus, if chat window is not in focus then the responses will be generated in new file.
+    - Please note that Inline prompts are not maintained in AI Provider chat history and only maintained in chat window. Each inline prompt will be treated as new prompt to AI provider, this is to allow bigger prompts and leave space for maximum tokens to be used in responses.
+    - Intutive approach to check the progress for Inline Prompts execution, you can check the status of API either with help of inline icon (&#8987;) or look for API progress in status bar. (refer third and fourth screenshot for refernce)
+
+    <img src="./assets-readme/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="48%" /> <img src="./assets-readme/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="48%" />
+    Add Screenshots here
+
+- Flexibility to provide different model names available with your AI Provider and other supported parameters by the AI Provider.
+- Provides intutive buttons with every codeblock in the AI responses for easily copying the codeblocks, creating new file with codeblocks or insert codeblocks at cursor position/selected code (refer below screenshot).
+  Add the screenshot here
+- Users can Cancel the ongoing API request by multiple ways:
+  - With help of `Cancel` button for chat prompts
+  - With help of `Cancel Request` button from progress bar in the Statusbar
+  - With help of `Abort Prompt API Request` command from `Command Pallete` (this will cancel both - any request created by chat prompts or request created by inline comments) (refer below screenshots)
+    Add Screenshots here
 - API Access token is stored in encrypted form and it's not as part of extension settings
 - If needed you can create your own Encryption key to ensure further enhanced security for your access token
   - To provide your Encryption Key, please create a file at root directory of your workspace with name `.aicodecompanion.config.js` and provide the Encryption Key like below
@@ -25,19 +45,8 @@ This Visual Studio extension is designed to enhance the productivity of engineer
       encryptionKey: "vscode2gpt112f9dbd8a37fe98421901",
     };
     ```
-- Multiple options to interact with AI provider for asking questions and increase productity:
-  - Context Menu Commands for quick access to common tasks like refactor code, find issues, explain and document code etc. Select the code in file and right click to access these commands. (refer below first screenshot).
-  - Flexibility to write custom prompts/queries to ask AI Provider and same can be done to add more context for selected code in the editor. No need to switch to other windows as extension provides interactive approach to provide complex requirements for your code in the editor itself, just select the code and ask AI provider to achieve complex tasks like writing test cases, understanding the code, refactoring & optimizing the code with retained context in the chat history. (refer below second screenshot)
-  - Flexibility to ask questions in form of inline code comments from editor:
-    - You can use single line comments or multi line comments to provide prompts/queries. Please use keyboard shortcut `Ctrl+Alt+Enter/Return` from any line in the comment to executing the Inline prompts with `AI Code Companion`.
-    - To keep the easy access to history for inline prompts, extension will add the responses to the chat window if it's in focus, if chat window is not in focus then the responses will be generated in new file.
-    - Please note that Inline prompts are not maintained in AI Provider chat history and only maintained in chat window. Each inline prompt will be treated as new prompt to AI provider, this is to allow bigger prompts and leave space for maximum tokens to be used in responses.
-    - Intutive approach to check the progress for Inline Prompts execution, you can check the status of API either with help of inline icon (&#8987;) or look for API progress in status bar. (refer third and fourth screenshot for refernce)
-
-    <img src="./assets-readme/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="48%" /> <img src="./assets-readme/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="48%" />
-
-- Flexibility to provide different model names available with your AI Provider and other supported parameters by the AI Provider.
 - Ensure data privacy by sharing user prompts directly with the AI provider. It access OpenAI APIs directly from Visual Studio to get responses for your prompts without any middleware or third party integrations to train other models on your codebase
+- Provides easy approach to clear chat history (please note this will delete messages from chat along with maintained chat history for previous context) 
 
 ## Requirements
 
