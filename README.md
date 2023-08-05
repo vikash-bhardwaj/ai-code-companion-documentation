@@ -9,7 +9,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 - Post installation please refer to the below [set-up section](#setup)
 
 ### Usage Screenshots
-<img src="./assets-readme/extension-splash-screen.png" alt="Extension usage screenshot" width="34%" /> <img src="./assets-readme/extension-loading-state.png" alt="Extension animated loading state for API progress" width="24%" /> <img src="./assets-readme/extension-initial-question.png" alt="Extension usage screenshot" width="24%" /> <img src="./assets-readme/extension-code-question.png" alt="Extension usage screenshot" width="24%" />
+<img src="./assets-readme/extension-splash-screen.png" alt="Extension usage screenshot" width="24%" /> <img src="./assets-readme/extension-loading-state.png" alt="Extension animated loading state for API progress" width="24%" /> <img src="./assets-readme/extension-initial-question.png" alt="Extension usage screenshot" width="24%" /> <img src="./assets-readme/extension-code-question.png" alt="Extension usage screenshot" width="24%" />
 
 ---
 
