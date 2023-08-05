@@ -26,16 +26,16 @@ This Visual Studio extension is designed to enhance the productivity of engineer
     - Please note that Inline prompts are not maintained in AI Provider chat history and only maintained in chat window. Each inline prompt will be treated as new prompt to AI provider, this is to allow bigger prompts and leave space for maximum tokens to be used in responses.
     - Intutive approach to check the progress for Inline Prompts execution, you can check the status of API either with help of inline icon (&#8987;) or look for API progress in status bar. (refer third and fourth screenshot for refernce)
 
-    <img src="./assets-readme/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="33%" /> <img src="./assets-readme/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="33%" /> <img src="./assets-readme/extension-inline-comments-api-progress.jpg" alt="Extension Capability show progress for Inline Comments API Calls" width="31%" />
+    <img src="./assets-readme/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="33%" /> <img src="./assets-readme/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="33%" /> <img src="./assets-readme/extension-inline-comments-api-progress.jpg" alt="Extension Capability show progress for Inline Comments API Calls" width="45%" />
 
 - Flexibility to provide different model names available with your AI Provider and other supported parameters by the AI Provider.
 - Provides intutive buttons with every codeblock in the AI responses for easily copying the codeblocks, creating new file with codeblocks or insert codeblocks at cursor position/selected code (refer below screenshot).
-  <center><img src="./assets-readme/extension-codeblock-buttons.jpg" alt="Extension screenshot to highlight copy code, create file and insert code buttons" width="40%" /></center>
+  <img style="align:center" src="./assets-readme/extension-codeblock-buttons.jpg" alt="Extension screenshot to highlight copy code, create file and insert code buttons" width="40%" />
 - Users can Cancel the ongoing API request by multiple ways:
   - With help of `Cancel` button for chat prompts
   - With help of `Cancel Request` button from progress bar in the Statusbar
   - With help of `Abort Prompt API Request` command from `Command Pallete` (this will cancel both - any request created by chat prompts or request created by inline comments) (refer below screenshot)
-    <img src="./assets-readme/extension-cancel-api-requests.jpg" alt="Extension screenshot to highlight cancel API request options" width="98%" />
+    <img src="./assets-readme/extension-cancel-api-requests.jpg" alt="Extension screenshot to highlight cancel API request options" width="50%" />
 - API Access token is stored in encrypted form and it's not as part of extension settings
 - If needed you can create your own Encryption key to ensure further enhanced security for your access token
   - To provide your Encryption Key, please create a file at root directory of your workspace with name `.aicodecompanion.config.js` and provide the Encryption Key like below
