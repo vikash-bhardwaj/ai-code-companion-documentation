@@ -111,7 +111,7 @@ Not known as of now unless I get from you
 
 ## <a name="release-notes"></a>Release Notes
 
-### [1.2.0] (Yet to be published)
+### [1.2.0]
 
 #### New Features:
 - Added capability to use Inline Comments (both single and multi line comments) for asking AI Provider. Use keyboard shortcut `Ctrl+Alt+Enter/Return` from any line of your comment to ask questions. For progress bar/loading state please refer above features section
