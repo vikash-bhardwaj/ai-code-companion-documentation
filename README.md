@@ -110,9 +110,21 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 ## Known Issues
 
-Not known as of now unless I get from you
+- Currently if an Inline Comment execution is in progress then another inline comment will not work at same time
+- If Inline comment execution is in progress then Code Review for GIT changes will not work or vice versa
 
 ## <a name="release-notes"></a>Release Notes
+
+### [1.3.0]
+
+#### New Features:
+- Added ability to review the code for all GIT Changes, please refer to updated features section for more details
+
+#### Experience Improvements:
+- Fixed the timeout issue
+- Fixed a defect where inline code comments were not adding loading state if the comment was starting with line zero in the file
+- Updated the Splash screen with important inoformation
+- Updated the readme with feedback from users
 
 ### [1.2.0]
 
