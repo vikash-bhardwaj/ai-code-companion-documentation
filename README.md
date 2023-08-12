@@ -125,6 +125,7 @@ This extension collects certain data for the purpose of interacting with APIs pr
 - Fixed a defect where inline code comments were not adding loading state if the comment was starting with line zero in the file
 - Updated the Splash screen with important inoformation
 - Updated the readme with feedback from users
+- Fixed a defect where Inline Comments prompts were not working when the file was huge
 
 ### [1.2.0]
 
