@@ -8,8 +8,8 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 - Install the extension either by visiting Visual Studio Code [marketplace page](https://marketplace.visualstudio.com/items?itemName=vikash-bhardwaj.aicodecompanion) or search the extension in the "Extensions" activity bar tab with name "AI Code Companion" by vikash-bhardwaj
 - Post installation please refer to the below [set-up section](#setup)
 - <strong style="color: red">Important!!</strong> - Post setting up the accesskey for your selcted AI provider please ensure you also check the model name in the settings. If you are using `PSChat` as your AI Data Provider then please change the model name because default model name will not work as is with PSChat. While you can check the respective AI Provider docs for all model names provided by your AI Provider, you can use `gpt-3.5-turbo` or `gpt-3.5-turbo-16k` for OpenAI & `gpt35turbo` or `gpt4` For PSChat.
-- For more details on how to set-up and use `AI Code Companion` and understand few usee cases please watch the Video:
-  <a href="https://www.youtube.com/watch?v=wmkSrL484V0" target="_blank" style="margin: 5px auto;" /><img src="./assets-readme/youtube-video-thumbnail.jpg" alt="AI Code Companion: Boosting Productivity with OpenAI APIs in VS Code | Usage Guide and Tutoria" width="50%" /></a>
+- For more details on how to set-up and use `AI Code Companion` and understand few usee cases please watch the Video:<br />
+  <a href="https://www.youtube.com/watch?v=wmkSrL484V0" target="_blank" align="center" /><img src="./assets-readme/youtube-video-thumbnail.jpg" alt="AI Code Companion: Boosting Productivity with OpenAI APIs in VS Code | Usage Guide and Tutoria" width="50%" /></a>
 
 
 ### Usage Screenshots
