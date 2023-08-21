@@ -5,14 +5,15 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 ## Usage
 
 ### Installation and Set-up
+
 - Install the extension either by visiting Visual Studio Code [marketplace page](https://marketplace.visualstudio.com/items?itemName=vikash-bhardwaj.aicodecompanion) or search the extension in the "Extensions" activity bar tab with name "AI Code Companion" by vikash-bhardwaj
 - Post installation please refer to the below [set-up section](#setup)
 - <strong style="color: red">Important!!</strong> - Post setting up the accesskey for your selcted AI provider please ensure you also check the model name in the settings. If you are using `PSChat` as your AI Data Provider then please change the model name because default model name will not work as is with PSChat. While you can check the respective AI Provider docs for all model names provided by your AI Provider, you can use `gpt-3.5-turbo` or `gpt-3.5-turbo-16k` for OpenAI & `gpt35turbo` or `gpt4` For PSChat.
 - For more details on how to set-up and use `AI Code Companion` and understand few usee cases please watch the Video: <br />
   <a href="https://www.youtube.com/watch?v=wmkSrL484V0" target="_blank"><img src="./assets-readme/youtube-video-thumbnail.jpg" alt="AI Code Companion: Boosting Productivity with OpenAI APIs in VS Code | Usage Guide and Tutoria" width="70%" /></a>
 
-
 ### Usage Screenshots
+
 <img src="./assets-readme/extension-splash-screen.png" alt="Extension splash screen screenshot" width="24%" /> <img src="./assets-readme/extension-loading-state.png" alt="Extension animated loading state for API progress" width="24%" /> <img src="./assets-readme/extension-initial-question.png" alt="Extension usage screenshot" width="24%" /> <img src="./assets-readme/extension-code-question.png" alt="Extension usage screenshot" width="24%" />
 
 ---
@@ -25,9 +26,11 @@ This Visual Studio extension is designed to enhance the productivity of engineer
   - You can use this feature by two ways: Either with help of Button `Review GIT Changes and create notes for your PR` provided in the Extension Interface or by Running the Command for same from command palatte(refer below screenshots)
     <br /><img src="./assets-readme/extension-code-review.jpg" alt="Automated review for GIT Changes with AI Code Companion" width="47%" /> <img src="./assets-readme/extension-code-review-command.jpg" alt="Command screenshot for Automated review for GIT Changes with AI Code Companion" width="47%" />
 - Multiple options to interact with AI provider for asking questions and increase productity:
+
   - Context Menu Commands for quick access to common tasks like refactor code, find issues, explain and document code etc. Select the code in file and right click to access these commands. (refer below first screenshot).
   - Flexibility to write custom prompts/queries to ask AI Provider and same can be done to add more context for selected code in the editor. No need to switch to other windows as extension provides interactive approach to provide complex requirements for your code in the editor itself, just select the code and ask AI provider to achieve complex tasks for selected code like writing test cases, understanding the code, refactoring & optimizing the code and this call gets further improved with retained context in the chat history. (refer below second screenshot)
   - Flexibility to ask questions in form of inline code comments from editor:
+
     - You can use single line comments or multi line comments to provide prompts/queries. Please use keyboard shortcut `Ctrl+Alt/Option+Enter/Return` from any line in the comment to executing the Inline prompts with `AI Code Companion`.
     - To keep the easy access to history for responses for inline prompts, extension will add the responses to the chat window if it's in focus, if chat window is not in focus then the responses will be generated in new file.
     - Please note that Inline prompts are not maintained in AI Provider chat history and only maintained in chat window. Each inline prompt will be treated as new prompt to AI provider, this is to allow bigger prompts and leave space for maximum tokens to be used in responses.
@@ -52,7 +55,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
     };
     ```
 - Ensure data privacy by sharing user prompts directly with the AI provider. It access OpenAI APIs directly from Visual Studio to get responses for your prompts without any middleware or third party integrations to train other models on your codebase
-- Provides easy approach to clear chat history (please note this will delete messages from chat along with maintained chat history for previous context) 
+- Provides easy approach to clear chat history (please note this will delete messages from chat along with maintained chat history for previous context)
 
 ## Requirements
 
@@ -118,12 +121,20 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 ## <a name="release-notes"></a>Release Notes
 
+### [1.3.1]
+
+#### Updated Readme:
+
+- Updated Readme for adding details about Youtube Video published for how to install and few use cases around how you can use the `AI Code Companion`
+
 ### [1.3.0]
 
 #### New Features:
+
 - Added ability to review the code for all GIT Changes, please refer to updated features section for more details
 
 #### Experience Improvements:
+
 - Fixed the timeout issue
 - Fixed a defect where inline code comments were not adding loading state if the comment was starting with line zero in the file
 - Updated the Splash screen with important inoformation
@@ -133,18 +144,20 @@ This extension collects certain data for the purpose of interacting with APIs pr
 ### [1.2.0]
 
 #### New Features:
+
 - Added capability to use Inline Comments (both single and multi line comments) for asking AI Provider. Use keyboard shortcut `Ctrl+Alt+Enter/Return` from any line of your comment to ask questions. For progress bar/loading state please refer above features section
 - Added capability to create new files from codeblocks
 - Added capability to insert the code from codeblocks to working file
 - Added capability to cancel the API requests, please refer above features section for more details
 
 #### Experience Improvements:
+
 - Ability to maintain the chatbox scroll position, in previous version it always used to scroll at the end of messages
 - Ability to add line breaks in the Prompt Inputbox to change existing message, in previous version `Shift+Enter/Return` was always forcing cursor at the end of message but user should be able to edit the message to add line breaks anywhere and cursor will remain in focus too with line breaks.
 - Increased the height for Inputbox
 - Fixed the Send Button alignment for smaller viewports,send button gets shifted to next lien for smaller viewpport. In previous version button was getting cropped
 - Fixed few defects
-  
+
 ### [1.1.0]
 
 - Added support for older versions of VS Code, starting with 1.74.0.
