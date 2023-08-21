@@ -8,6 +8,9 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 - Install the extension either by visiting Visual Studio Code [marketplace page](https://marketplace.visualstudio.com/items?itemName=vikash-bhardwaj.aicodecompanion) or search the extension in the "Extensions" activity bar tab with name "AI Code Companion" by vikash-bhardwaj
 - Post installation please refer to the below [set-up section](#setup)
 - <strong style="color: red">Important!!</strong> - Post setting up the accesskey for your selcted AI provider please ensure you also check the model name in the settings. If you are using `PSChat` as your AI Data Provider then please change the model name because default model name will not work as is with PSChat. While you can check the respective AI Provider docs for all model names provided by your AI Provider, you can use `gpt-3.5-turbo` or `gpt-3.5-turbo-16k` for OpenAI & `gpt35turbo` or `gpt4` For PSChat.
+- For more details on how to set-up and use `AI Code Companion` and understand few usee cases please watch the Video:
+  [![AI Code Companion: Boosting Productivity with OpenAI APIs in VS Code | Usage Guide and Tutorial Video](http://img.youtube.com/vi/wmkSrL484V0/0.jpg)](https://www.youtube.com/watch?v=wmkSrL484V0)
+
 
 ### Usage Screenshots
 <img src="./assets-readme/extension-splash-screen.png" alt="Extension splash screen screenshot" width="24%" /> <img src="./assets-readme/extension-loading-state.png" alt="Extension animated loading state for API progress" width="24%" /> <img src="./assets-readme/extension-initial-question.png" alt="Extension usage screenshot" width="24%" /> <img src="./assets-readme/extension-code-question.png" alt="Extension usage screenshot" width="24%" />
