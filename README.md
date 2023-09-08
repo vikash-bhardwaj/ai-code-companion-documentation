@@ -160,6 +160,18 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 ## <a name="release-notes"></a>Release Notes
 
+### [1.4.0] (Will be available over week-end)
+
+#### New Features:
+
+- Added new context menu commands for developers to write test cases with just a single button click, ensured developers get full freedom to pick the libraries options their own rather than writing test cases with some generic library
+
+#### Experience Improvements:
+
+- Fixed code highliting issues for light theme
+- Fixed Issue where inline/multi line comments based prompts were not working
+- Also fixed an issue where the multi line comment was not working if it was not having a "*" at starting of line
+
 ### [1.3.1]
 
 #### Updated Readme:
