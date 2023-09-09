@@ -38,7 +38,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 
     <img src="./assets-readme/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="33%" /> <img src="./assets-readme/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="33%" /> <img src="./assets-readme/extension-inline-comments-api-progress.jpg" alt="Extension Capability show progress for Inline Comments API Calls" width="66%" />
 
-- `AI Code Companion` has become smarter to write test cases for selected code using multiple approaches, users can write test cases for code with following options:
+- <a name="unit-test"></a>`AI Code Companion` has become smarter to write test cases for selected code using multiple approaches, users can write test cases for code with following options:
   - Users can select the code in editor and write Prompt in the available Input Textbox to write test cases
   - Users can also use Context Menu options to write test cases and extension gives full freedom to users for configuring the libraries to write test cases. See below options available for users when it comes to writing test cases using context menu commands:
     <br /> <img src="./assets-readme/extension-testing-libraries-menu.jpg" alt="AI Code Companion - Testing libraries options pick screenshot" width="48%" /> <br />
@@ -164,13 +164,13 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 #### New Features:
 
-- Added new context menu commands for developers to write test cases with just a single button click, ensured developers get full freedom to pick the libraries options their own rather than writing test cases with some generic library
+- Added new context menu commands for developers to write test cases with just a single button click, ensured developers get full freedom to pick the libraries options their own rather than writing test cases with some generic library. For details refer to the features section for [writing test cases](#unit-test)
+- Provided support for Light Theme as the code blocks were not clear for few languages in light theme
+- Extended support for inline prompts using comments for other prgramming languages
 
 #### Experience Improvements:
 
-- Fixed code highliting issues for light theme
-- Fixed Issue where inline/multi line comments based prompts were not working
-- Also fixed an issue where the multi line comment was not working if it was not having a "*" at starting of line
+- Fixed an issue where the multi line comment was not working if it was not having a "*" at starting of line
 
 ### [1.3.1]
 
