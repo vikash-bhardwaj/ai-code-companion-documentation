@@ -159,6 +159,12 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 ## <a name="release-notes"></a>Release Notes
 
+### [1.4.1]
+
+#### Support for VS Code 1.83.0:
+
+- With new version of VS Code 1.83.0 it started breaking the Delete and Settings Icons used so added a fix for same
+
 ### [1.4.0]
 
 #### New Features:
