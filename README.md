@@ -94,6 +94,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
     ```
 - Ensure data privacy by sharing user prompts directly with the AI provider. It access OpenAI APIs directly from Visual Studio to get responses for your prompts without any middleware or third party integrations to train other models on your codebase
 - Provides easy approach to clear chat history (please note this will delete messages from chat along with maintained chat history for previous context)
+- Allows you to Enable/Disable Extension logs with a simple extenion setting for easy API debugging (We ensured that the Access token is not printed as part of logs). Please look for setting `Enable Logs` under Extension Settings.
 
 ## Requirements
 
@@ -141,6 +142,7 @@ To start conversation with AI Code Companion you need to provide your AI Provide
 - `AI Code Companion: Model Name`: Default: `gpt-3.5-turbo`: Allows you to change Model name used for your AI provider.
 - `AI Code Companion: Temperature`: Default: `0.5`: Allows you to change the value for Temperature.
 - `AI Code Companion: Top_P`: Default: `0.6`: Allows you to change the value for Top_P.
+- `AI Code Companion: Enable Logs`: Default: `false`: Allowes you to enable/disable logs for debugging
 
 ## License
 
