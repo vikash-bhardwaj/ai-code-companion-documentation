@@ -161,6 +161,16 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 ## <a name="release-notes"></a>Release Notes
 
+### [1.5.0]
+
+#### New Feature
+
+- Added capability to enable/disable logs for users to help in debugging
+
+#### Experience Enhancement:
+
+- By default focus should be set for the Inputbox when user open the extension using command or context menu
+
 ### [1.4.1]
 
 #### Support for VS Code 1.83.0:
