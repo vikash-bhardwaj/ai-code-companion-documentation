@@ -162,6 +162,12 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 ## <a name="release-notes"></a>Release Notes
 
+### [1.6.1]
+
+#### Theming Changes
+
+- Few Theming changes
+  
 ### [1.6.0]
 
 #### New Feature
