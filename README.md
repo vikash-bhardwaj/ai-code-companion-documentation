@@ -95,6 +95,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 - Ensure data privacy by sharing user prompts directly with the AI provider. It access OpenAI APIs directly from Visual Studio to get responses for your prompts without any middleware or third party integrations to train other models on your codebase
 - Provides easy approach to clear chat history (please note this will delete messages from chat along with maintained chat history for previous context)
 - Allows you to Enable/Disable Extension logs with a simple extension setting for easy API debugging (We ensured that the Access token is not printed as part of logs). Please look for setting `Enable Logs` under Extension Settings.
+- Provides easy approach to repeat the prompt from chat history and in case of API failure
 
 ## Requirements
 
@@ -160,6 +161,13 @@ This extension collects certain data for the purpose of interacting with APIs pr
 - If Inline comment execution is in progress then Code Review for GIT changes will not work or vice versa
 
 ## <a name="release-notes"></a>Release Notes
+
+### [1.6.0]
+
+#### New Feature
+
+- Added capability to edit existing prompts from Chat Histpry
+- Added a Repeat prompt capability in case of API failure so that user don't need to type/copy paste the prompt
 
 ### [1.5.0]
 
