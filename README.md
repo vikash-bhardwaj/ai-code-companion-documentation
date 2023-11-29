@@ -166,7 +166,7 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 #### New Feature
 
-- Added capability to edit existing prompts from Chat Histpry
+- Added capability to edit existing prompts from Chat History
 - Added a Repeat prompt capability in case of API failure so that user don't need to type/copy paste the prompt
 
 ### [1.5.0]
