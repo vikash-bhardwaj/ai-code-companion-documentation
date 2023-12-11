@@ -168,9 +168,9 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 ### [1.7.0]
 
-#### New Feature
+#### New Features
 
-- Added capability to code review the GIT Changes at individual file level with conext menu options from editor as well as from file name in file Explorer bar. Refer the features section update for more details.
+- Added capability to code review the GIT Changes at individual file level with context menu options from editor as well as from file name in file Explorer bar. Refer the features section update for more details.
 - Also added capability for users to provide additional notes for the code review so that Model can consider that extra code review guidelines provided by user. This is configurable from the extension settings.
 
 ### [1.6.1]
@@ -178,7 +178,7 @@ This extension collects certain data for the purpose of interacting with APIs pr
 #### Theming Changes
 
 - Few Theming changes
-  
+
 ### [1.6.0]
 
 #### New Feature
