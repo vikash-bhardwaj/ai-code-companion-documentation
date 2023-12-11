@@ -136,7 +136,7 @@ To start conversation with AI Code Companion you need to provide your AI Provide
 
 #### Extension's settings screenshot:
 
-![Extension's settings screenshot](./assets-readme/extension-settings.png)
+![Extension's settings screenshot](./assets-readme/extension-settings.jpg)
 
 #### Settings usage:
 
@@ -147,6 +147,7 @@ To start conversation with AI Code Companion you need to provide your AI Provide
 - `AI Code Companion: Temperature`: Default: `0.5`: Allows you to change the value for Temperature.
 - `AI Code Companion: Top_P`: Default: `0.6`: Allows you to change the value for Top_P.
 - `AI Code Companion: Enable Logs`: Default: `false`: Allows you to enable/disable logs for debugging
+- `AI Code Companion: Enable User Prompt For Code Review`: Default: `true`: Allows you to enable/disable Input Prompt to take Prompt Message for additional code review context
 
 ## License
 
