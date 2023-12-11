@@ -22,9 +22,12 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 
 - Ensure to retain the separate context of your chat history per project workspace (This helps users to work with separate projects without mixing the chat context)
 - Ensure auto trimming of user's history context to have seamless experience, when token usage for the API is about to reach maximum token length (defined by extension setting `AI Code Companion: Model Max Tokens Length`) for provided model name it trims the messages by following FIFO logic - First in First Out
-- `Automated Code Reviews` for your `GIT` changes, with just one click of a button you can now review the changes in your GIT repository. `AI Code Companion` will go through all of your GIT changes(modified and added files) and provide you comments. You can play around this by running it multiple times to get different perspectives and improve code quality.
-  - You can use this feature by two ways: Either with help of Button `Review GIT Changes and create notes for your PR` provided in the Extension Interface or by Running the Command for same from command palatte(refer below screenshots)
-    <br /><img src="./assets-readme/extension-code-review.jpg" alt="Automated review for GIT Changes with AI Code Companion" width="47%" /> <img src="./assets-readme/extension-code-review-command.jpg" alt="Command screenshot for Automated review for GIT Changes with AI Code Companion" width="47%" />
+- `Automated Code Reviews` for your `GIT` changes, with just one click of a button you can now review the changes in your GIT repository. `AI Code Companion` will go through all of your GIT changes(modified and added files) and provide you comments. You can also provide your custom prompt message while running the code review action. You can play around this by running it multiple times to get different perspectives and improve code quality.
+  - You can use this feature by two ways:
+    - Either with help of Button `Review GIT Changes and create notes for your PR` provided in the Extension Interface or by Running the Command for same from command palatte(refer below screenshots)
+      <br /><img src="./assets-readme/extension-code-review.jpg" alt="Automated review for GIT Changes with AI Code Companion" width="47%" /> <img src="./assets-readme/extension-code-review-command.jpg" alt="Command screenshot for Automated review for GIT Changes with AI Code Companion" width="47%" />
+    - You can also get code review done at individual file level either by using context Menu option from editor or by opening the context Menu from file name in explorer bar. Please refer below screenshots for your reference:
+      <br /><img src="./assets-readme/extension-code-review-context-menu.jpg" alt="Automated review for GIT Changes with AI Code Companion from Context Menu" width="47%" /> <img src="./assets-readme/extension-code-review-context-menu-file.jpg" alt="Command screenshot for Automated review for GIT Changes with AI Code Companion from File Context Menu" width="47%" />
 - Multiple options to interact with AI provider for asking questions and increase productity:
 
   - Context Menu Commands for quick access to common tasks like refactor code, find issues, explain and document code etc. Select the code in file and right click to access these commands. (refer below first screenshot).
@@ -161,6 +164,13 @@ This extension collects certain data for the purpose of interacting with APIs pr
 - If Inline comment execution is in progress then Code Review for GIT changes will not work or vice versa
 
 ## <a name="release-notes"></a>Release Notes
+
+### [1.7.0]
+
+#### New Feature
+
+- Added capability to code review the GIT Changes at individual file level with conext menu options from editor as well as from file name in file Explorer bar. Refer the features section update for more details.
+- Also added capability for users to provide additional notes for the code review so that Model can consider that extra code review guidelines provided by user. This is configurable from the extension settings.
 
 ### [1.6.1]
 
