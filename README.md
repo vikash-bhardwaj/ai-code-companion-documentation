@@ -156,6 +156,18 @@ To start conversation with AI Code Companion you need to provide your AI Provide
 - `AI Code Companion: Enable Logs`: Default: `false`: Allows you to enable/disable logs for debugging
 - `AI Code Companion: Enable User Prompt For Code Review`: Default: `true`: Allows you to enable/disable Input Prompt to take Prompt Message for additional code review context
 
+## :sparkles: A Note to Contributors :sparkles:
+
+A heartfelt thanks to these champs who have helped us enhance our project, either through their valuable pull requests or by identifying defects. Your contributions are greatly appreciated!
+
+### Our Valued Contributors
+
+![Manish Shekhawat](https://github.com/manishekhawat.png?size=50) [Manish Shekhawat](https://github.com/manishekhawat) - Implemented Splash screen for the extension
+
+![Aman Kumar](https://github.com/engamankumar.png?size=50) [Aman Kumar](https://github.com/engamankumar) - Theming for the Chat Interface, Defect callouts in features
+
+![Soumya Dandapat](https://github.com/SoumyaDandapat.png?size=50) [Soumya Dandapat](https://github.com/SoumyaDandapat) - Defect callouts in features
+
 ## License
 
 This extension is licensed under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/#:~:text=If%20a%20copy%20of%20the,org%2FMPL%2F2.0%2F.).
