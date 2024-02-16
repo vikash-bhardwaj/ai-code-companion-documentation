@@ -32,9 +32,9 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 - <a name="component-generator"></a>`UI Component Generator`:
   - Enhance your development workflow with `AI Code Companion`, a VS Code extension designed to elevate the quality of your UI components. Despite the advancements of Gen AI, it still requires detailed prompts to produce code that adheres to Non-Functional Requirements (NFRs) and best practices. Our tool fills this gap by offering a curated library of UI components that span various frameworks and styling techniques, with a strong emphasis on best practices such as accessibility and performance.
   - Our component library is dynamic, with regular updates to refine existing components and introduce new ones, ensuring that you stay at the forefront of development standards. If you're passionate about code quality and have insights on crafting prompts that yield components meeting high standards of accessibility and performance, we welcome your contributions. Join us in our mission to make AI-generated code not just functional, but exemplary. Reach out to us, and let's collaborate to enhance the AI Code Companion library together.
-- How to use this feature:
-  - Open the Component Generator either by opening it from menu(Click on three dots next to Settings icon in the Extension Title bar) or by running the command `AI Code Companion: Generate UI Components`. For more information, refer to the screenshot below, and watch the video provided above on how to use the extension:
-  <br /><img src="./assets-readme/extension-generate-ui-components.jpg" alt="Automated component generation with Gen AI" width="47%" />
+  - How to use this feature:
+    - Open the Component Generator either by opening it from menu(Click on three dots next to Settings icon in the Extension Title bar) or by running the command `AI Code Companion: Generate UI Components`. For more information, refer to the screenshot below, and watch the video provided above on how to use the extension:
+    <br /><img src="./assets-readme/extension-generate-ui-components.jpg" alt="Automated component generation with Gen AI" width="47%" />
   
 - Multiple options to interact with AI provider for asking questions and increase productivity:
   - Context Menu Commands for quick access to common tasks like refactor code, find issues, explain and document code etc. Select the code in file and right click to access these commands. (refer below first screenshot).
