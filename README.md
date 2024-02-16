@@ -163,7 +163,7 @@ A heartfelt thanks to these champs who have helped us enhance our project, eithe
 ### Our Valued Contributors
 
 - <img src="https://images.weserv.nl/?url=github.com/manishekhawat.png?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="50" height="50" alt="manish Shekhawat" align="middle" /> &nbsp;[Manish Shekhawat](https://github.com/manishekhawat)
-  - Implemented Splash screen for the extension
+  - Implemented splash screen for the extension
 
 - <img src="https://images.weserv.nl/?url=github.com/engamankumar.png?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="50" height="50" alt="Aman Kumar" align="middle" /> &nbsp;[Aman Kumar](https://github.com/engamankumar)
   - Theming for the Chat Interface, Defect callouts in features
