@@ -162,13 +162,13 @@ A heartfelt thanks to these champs who have helped us enhance our project, eithe
 
 ### Our Valued Contributors
 
-<img src="https://github.com/manishekhawat.png" width="50" height="50" alt="manish Shekhawat" align="middle" /> [Aman Kumar](https://github.com/manishekhawat)
+<img src="https://github.com/manishekhawat.png" width="50" height="50" alt="manish Shekhawat" align="middle" /> &nbsp;[manish Shekhawat](https://github.com/manishekhawat)
 - Implemented Splash screen for the extension
 
-<img src="https://github.com/engamankumar.png" width="50" height="50" alt="Aman Kumar" /> [Aman Kumar](https://github.com/engamankumar)
+<img src="https://github.com/engamankumar.png" width="50" height="50" alt="Aman Kumar" align="middle" /> &nbsp;[Aman Kumar](https://github.com/engamankumar)
 - Theming for the Chat Interface, Defect callouts in features
 
-<img src="https://github.com/SoumyaDandapat.png" width="50" height="50" alt="Soumya Dandapat" /> [Soumya Dandapat](https://github.com/SoumyaDandapat)
+<img src="https://github.com/SoumyaDandapat.png" width="50" height="50" alt="Soumya Dandapat" align="middle" /> &nbsp;[Soumya Dandapat](https://github.com/SoumyaDandapat)
 - Defect callouts in features
 
 ## License
