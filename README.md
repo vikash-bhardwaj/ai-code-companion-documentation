@@ -28,8 +28,16 @@ This Visual Studio extension is designed to enhance the productivity of engineer
       <br /><img src="./assets-readme/extension-code-review.jpg" alt="Automated review for GIT Changes with AI Code Companion" width="47%" /> <img src="./assets-readme/extension-code-review-command.jpg" alt="Command screenshot for Automated review for GIT Changes with AI Code Companion" width="47%" />
     - You can also get code review done at individual file level either by using context Menu option from editor or by opening the context Menu from file name in explorer bar. Please refer below screenshots for your reference:
       <br /><img src="./assets-readme/extension-code-review-context-menu.jpg" alt="Automated review for GIT Changes with AI Code Companion from Context Menu" width="47%" /> <img src="./assets-readme/extension-code-review-context-menu-file.jpg" alt="Command screenshot for Automated review for GIT Changes with AI Code Companion from File Context Menu" width="47%" />
-- Multiple options to interact with AI provider for asking questions and increase productity:
 
+- <a name="component-generator"></a>UI Component Generator:
+  - Enhance your development workflow with `AI Code Companion`, a VS Code extension designed to elevate the quality of your UI components. Despite the advancements of Gen AI, it still requires detailed prompts to produce code that adheres to Non-Functional Requirements (NFRs) and best practices. Our tool fills this gap by offering a curated library of UI components that span various frameworks and styling techniques, with a strong emphasis on best practices such as accessibility and performance.
+
+Our component library is dynamic, with regular updates to refine existing components and introduce new ones, ensuring that you stay at the forefront of development standards. If you're passionate about code quality and have insights on crafting prompts that yield components meeting high standards of accessibility and performance, we welcome your contributions. Join us in our mission to make AI-generated code not just functional, but exemplary. Reach out to us, and let's collaborate to enhance the AI Code Companion library together.
+- How to use this feature:
+  - Open the Component Generator either by opening it from menu(Click on three dots next to Settings icon in the Extension Title bar) or by running the command `AI Code Companion: Generate UI Components`. For more information, refer to the screenshot below, and watch the video provided above on how to use the extension:
+  <br /><img src="./assets-readme/extension-generate-ui-components.jpg" alt="Automated component generation with Gen AI" width="47%" />
+  
+- Multiple options to interact with AI provider for asking questions and increase productivity:
   - Context Menu Commands for quick access to common tasks like refactor code, find issues, explain and document code etc. Select the code in file and right click to access these commands. (refer below first screenshot).
   - Flexibility to write custom prompts/queries to ask AI Provider and same can be done to add more context for selected code in the editor. No need to switch to other windows as extension provides interactive approach to provide complex requirements for your code in the editor itself, just select the code and ask AI provider to achieve complex tasks for selected code like writing test cases, understanding the code, refactoring & optimizing the code and this call gets further improved with retained context in the chat history. (refer below second screenshot)
   - Flexibility to ask questions in form of inline code comments from editor:
@@ -165,6 +173,22 @@ This extension collects certain data for the purpose of interacting with APIs pr
 - If Inline comment execution is in progress then Code Review for GIT changes will not work or vice versa
 
 ## <a name="release-notes"></a>Release Notes
+
+### [1.8.0]
+
+#### New Features
+
+- Added the capability to generate UI Components with the help of a wizard that ensures adherence to Accessibility and Performance best practices. Please refer to the above Features section for the [UI Component Generator](#component-generator) for more information.
+
+#### Theming and Defect Fixes in Existing Features
+- Major theming changes for the Chat Interface.
+- Fixed multiple defects to improve existing features:
+  - Single File code review was not working with the context menu for Windows OS.
+  - Code review was not functioning for staged files.
+  - Other code review issues, such as the right-click code review action not working for folders or file names containing spaces, etc.
+  - Multiple repeat prompts were appearing in some edge cases.
+  - Scroll position was not being maintained in some edge cases.
+  - Some other minor defects.
 
 ### [1.7.0]
 
