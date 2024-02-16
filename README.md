@@ -162,8 +162,10 @@ A heartfelt thanks to these champs who have helped us enhance our project, eithe
 
 ### Our Valued Contributors
 
-<img src="https://github.com/manishekhawat.png" width="50" height="50" alt="Manish Shekhawat" /> [Manish Shekhawat](https://github.com/manishekhawat)
-- Implemented Splash screen for the extension
+<a href="https://github.com/manishekhawat">
+  <img src="https://github.com/manishekhawat.png?size=50" width="50" height="50" alt="Manish Shekhawat" style="border-radius: 50%; vertical-align: middle;" />
+</a>
+&nbsp;[Manish Shekhawat](https://github.com/manishekhawat)
 
 <img src="https://github.com/engamankumar.png" width="50" height="50" alt="Aman Kumar" /> [Aman Kumar](https://github.com/engamankumar)
 - Theming for the Chat Interface, Defect callouts in features
