@@ -9,6 +9,33 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 - Install the extension either by visiting Visual Studio Code [marketplace page](https://marketplace.visualstudio.com/items?itemName=vikash-bhardwaj.aicodecompanion) or search the extension in the "Extensions" activity bar tab with name "AI Code Companion" by vikash-bhardwaj
 - Post installation please refer to the below [set-up section](#setup)
 - <strong style="color: red">Important!!</strong> - Post setting up the accesskey for your selcted AI provider please ensure you also check the model name in the settings. If you are using `PSChat` as your AI Data Provider then please change the model name because default model name will not work as is with PSChat. While you can check the respective AI Provider docs for all model names provided by your AI Provider, you can use `gpt-3.5-turbo` or `gpt-3.5-turbo-16k` for OpenAI & `gpt35turbo` or `gpt4` For PSChat.
+- <strong style="color: red">**Note for `Azure Open AI` Set-up**</strong> - Extension has ability to connect to Azure OpenAI API through `API Key Authentication` and `Microsoft Entra Authentication` method. Please refer [Azure OpenAI Service REST API reference](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference) for more information on authenticating for Azure Open AI.
+
+  If you choose to use Azure OpenAI as your service provider, follow these steps to set up the API Endpoint for extension before referring to the below [set-up section](#setup):
+
+  1. Create a configuration file with name `.aicodecompanion.config.js` at the `root` of your project with below configuration. This file allow you to provide the `Azure Open AI` API URL, which is a unique URL for your account. In case of other AI Providers you don't need to provide this object unless you wish you change the API endpoint for other providers too.
+
+  ```javascript
+  // Example configuration for providing the API Endpoint:
+  module.exports = {
+    apiProvider: {
+      AzureOpenAI: {
+        endPointUrl:
+          "https://username-azure-open-ai.openai.azure.com/openai/deployments/azure-open-ai-model/chat/completions?api-version=2023-07-01-preview",
+      },
+      // Below is reference for OpenAI and PSChat Providers in case you want to change the URL for these Options. It will work only if Request and Response Contracts are same for your endpoints
+      OpenAI: {
+        endPointUrl: "Open AI URL",
+      },
+      PSChat: {
+        endPointUrl: "PSChat URL",
+      },
+    },
+  };
+  ```
+
+  2. Once you have created this configuration file, please reload the project workspace for extension to purge the cache and use the latest config created by you.
+
 - For more details on how to set-up and use `AI Code Companion` and understand few usee cases please watch the Video: <br />
   <a href="https://www.youtube.com/watch?v=wmkSrL484V0" target="_blank"><img src="./assets-readme/youtube-video-thumbnail.jpg" alt="AI Code Companion: Boosting Productivity with OpenAI APIs in VS Code | Usage Guide and Tutoria" width="70%" /></a>
 
@@ -28,15 +55,14 @@ This Visual Studio extension is designed to enhance the productivity of engineer
       <br /><img src="./assets-readme/extension-code-review.jpg" alt="Automated review for GIT Changes with AI Code Companion" width="47%" /> <img src="./assets-readme/extension-code-review-command.jpg" alt="Command screenshot for Automated review for GIT Changes with AI Code Companion" width="47%" />
     - You can also get code review done at individual file level either by using context Menu option from editor or by opening the context Menu from file name in explorer bar. Please refer below screenshots for your reference:
       <br /><img src="./assets-readme/extension-code-review-context-menu.jpg" alt="Automated review for GIT Changes with AI Code Companion from Context Menu" width="47%" /> <img src="./assets-readme/extension-code-review-context-menu-file.jpg" alt="Command screenshot for Automated review for GIT Changes with AI Code Companion from File Context Menu" width="47%" />
-
 - <a name="component-generator"></a>`UI Component Generator`:
   - Enhance your development workflow with `AI Code Companion`, a VS Code extension designed to elevate the quality of your UI components. Despite the advancements of Gen AI, it still requires detailed prompts to produce code that adheres to Non-Functional Requirements (NFRs) and best practices. Our tool fills this gap by offering a curated library of UI components that span various frameworks and styling techniques, with a strong emphasis on best practices such as accessibility and performance.
   - Our component library is dynamic, with regular updates to refine existing components and introduce new ones, ensuring that you stay at the forefront of development standards. If you're passionate about code quality and have insights on crafting prompts that yield components meeting high standards of accessibility and performance, we welcome your contributions. Join us in our mission to make AI-generated code not just functional, but exemplary. Reach out to us, and let's collaborate to enhance the AI Code Companion library together.
   - How to use this feature:
     - Open the Component Generator either by opening it from menu(Click on three dots next to Settings icon in the Extension Title bar) or by running the command `AI Code Companion: Generate UI Components`. For more information, refer to the screenshot below, and watch the video provided above on how to use the extension:
-    <br /><img src="./assets-readme/extension-generate-ui-components.jpg" alt="Automated component generation with Gen AI" width="90%" />
-  
+      <br /><img src="./assets-readme/extension-generate-ui-components.jpg" alt="Automated component generation with Gen AI" width="90%" />
 - Multiple options to interact with AI provider for asking questions and increase productivity:
+
   - Context Menu Commands for quick access to common tasks like refactor code, find issues, explain and document code etc. Select the code in file and right click to access these commands. (refer below first screenshot).
   - Flexibility to write custom prompts/queries to ask AI Provider and same can be done to add more context for selected code in the editor. No need to switch to other windows as extension provides interactive approach to provide complex requirements for your code in the editor itself, just select the code and ask AI provider to achieve complex tasks for selected code like writing test cases, understanding the code, refactoring & optimizing the code and this call gets further improved with retained context in the chat history. (refer below second screenshot)
   - Flexibility to ask questions in form of inline code comments from editor:
@@ -49,11 +75,14 @@ This Visual Studio extension is designed to enhance the productivity of engineer
     <img src="./assets-readme/extension-context-menu.png" alt="Extension predefined commands for selected code via Context Menu" width="33%" /> <img src="./assets-readme/extension-selection-command.png" alt="Extension Capability to add custom prompt/message for selected code" width="33%" /> <img src="./assets-readme/extension-inline-comments-api-progress.jpg" alt="Extension Capability show progress for Inline Comments API Calls" width="66%" />
 
 - <a name="unit-test"></a>`AI Code Companion` has become smarter to write test cases for selected code using multiple approaches, users can write test cases for code with following options:
+
   - Users can select the code in editor and write Prompt in the available Input Textbox to write test cases
   - Users can also use Context Menu options to write test cases and extension gives full freedom to users for configuring the libraries to write test cases. See below options available for users when it comes to writing test cases using context menu commands:
     <br /> <img src="./assets-readme/extension-testing-libraries-menu.jpg" alt="AI Code Companion - Testing libraries options pick screenshot" width="48%" /> <br />
+
     1. Create a file at root of your project with name `.aicodecompanion.config.js` to define testing libraries for the project workspace for every programming language like below. You can also define your own custom prompt in case you dont like the prompt generated by the companion for you, see as an example for unitTests under javascript:
-    ```
+
+    ```javascript
       module.exports = {
         testingLibraries: {
           javascript: { // this should match with language ID which is provided by VS Code Editor for the code snippet/file
@@ -84,8 +113,10 @@ This Visual Studio extension is designed to enhance the productivity of engineer
         },
       };
     ```
+
     2. In case you don't provide the above config and still use the context menu then `AI Code Companion` is smart enough to recommend you the library names to pick from popular libraries for the given programming language. You will see below UI to pick the libraries and once you select the libraries it will remember the choices for future. You can reset the option by executing the command `Reset Testing Libraries Options for Unit and E2E Tests` using `cmd/ctr+shift+p` (refer second screenshot).
        <br /> <img src="./assets-readme/extension-testing-libraries-options.jpg" alt="AI Code Companion - Testing libraries options pick screenshot" width="48%" /> <img src="./assets-readme/extension-remove-testing-libraries-options.jpg" alt="AI Code Companion - remove testing libraries options command screenshot" width="48%" /> <br />
+
 - Flexibility to provide different model names available with your AI Provider and other supported parameters by the AI Provider.
 - Provides intutive buttons with every codeblock in the AI responses for easily copying the codeblocks, creating new file with codeblocks or insert codeblocks at cursor position/selected code (refer below screenshot).
   <br /><img src="./assets-readme/extension-codeblock-buttons.jpg" alt="Extension screenshot to highlight copy code, create file and insert code buttons" width="40%" />
@@ -96,12 +127,14 @@ This Visual Studio extension is designed to enhance the productivity of engineer
     <br /><img src="./assets-readme/extension-cancel-api-requests.jpg" alt="Extension screenshot to highlight cancel API request options" width="50%" />
 - API Access token is stored in encrypted form and it's not as part of extension settings
 - If needed you can create your own Encryption key to ensure further enhanced security for your access token
+
   - To provide your Encryption Key, please create a file at root directory of your workspace with name `.aicodecompanion.config.js` and provide the Encryption Key like below
     ```javascript
     module.exports = {
       encryptionKey: "vscode2gpt112f9dbd8a37fe98421901",
     };
     ```
+
 - Ensure data privacy by sharing user prompts directly with the AI provider. It access OpenAI APIs directly from Visual Studio to get responses for your prompts without any middleware or third party integrations to train other models on your codebase
 - Provides easy approach to clear chat history (please note this will delete messages from chat along with maintained chat history for previous context)
 - Allows you to Enable/Disable Extension logs with a simple extension setting for easy API debugging (We ensured that the Access token is not printed as part of logs). Please look for setting `Enable Logs` under Extension Settings.
@@ -163,13 +196,19 @@ A heartfelt thanks to these champs who have helped us enhance our project, eithe
 ### Our Valued Contributors
 
 - <img src="https://images.weserv.nl/?url=github.com/manishekhawat.png?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="50" height="50" alt="manish Shekhawat" align="middle" /> &nbsp;[Manish Shekhawat](https://github.com/manishekhawat)
-  - Implemented splash screen for the extension
+
+  - Implemented splash screen for the extension.
 
 - <img src="https://images.weserv.nl/?url=github.com/engamankumar.png?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="50" height="50" alt="Aman Kumar" align="middle" /> &nbsp;[Aman Kumar](https://github.com/engamankumar)
-  - Theming for the Chat Interface, Defect callouts in features
+
+  - Theming for the Chat Interface, Defect callouts in features.
 
 - <img src="https://images.weserv.nl/?url=github.com/SoumyaDandapat.png?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="50" height="50" alt="Soumya Dandapat" align="middle" /> &nbsp;[Soumya Dandapat](https://github.com/SoumyaDandapat)
-  - Defect callouts in features
+
+  - Defect callouts in features.
+
+- <img src="https://images.weserv.nl/?url=github.com/surensubhu.png?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="50" height="50" alt="Surender Natarajan" align="middle" /> &nbsp;[Surender Natarajan](https://github.com/surensubhu)
+  - Integrated Azure Open AI endpoint as one of the AI Provider to work with `AI Code Companion`.
 
 ## License
 
@@ -188,6 +227,12 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 ## <a name="release-notes"></a>Release Notes
 
+### [1.9.0]
+
+#### New Features
+
+- Added API integration with Azure Open AI, please refer to above set-up section for working with Azure Open AI endpoint.
+
 ### [1.8.0]
 
 #### New Features
@@ -195,6 +240,7 @@ This extension collects certain data for the purpose of interacting with APIs pr
 - Added the capability to generate UI Components with the help of a wizard that ensures adherence to Accessibility and Performance best practices. Please refer to the above Features section for the [UI Component Generator](#component-generator) for more information.
 
 #### Theming and Defect Fixes in Existing Features
+
 - Major theming changes for the Chat Interface.
 - Fixed multiple defects to improve existing features:
   - Single File code review was not working with the context menu for Windows OS.
