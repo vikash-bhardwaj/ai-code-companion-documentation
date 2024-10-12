@@ -49,6 +49,22 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 
 - Ensure to retain the separate context of your chat history per project workspace (This helps users to work with separate projects without mixing the chat context)
 - Ensure auto trimming of user's history context to have seamless experience, when token usage for the API is about to reach maximum token length (defined by extension setting `AI Code Companion: Model Max Tokens Length`) for provided model name it trims the messages by following FIFO logic - First in First Out
+- Provide capability to login with Atlassian JIRA and fetch the JIRA ticket details, update tickets for basic fields updates and also create JIRA tickets from VS Code itself. Enable you to simply refer the story id and ask to write code, for instance "fetch the details for JIRA story ACC-122 and write ReactJS Components". (Doesn't work with Streaming so might feel little slow compared with other responses, team is working on it).
+  - Please type double slash anywhere in text input to get the commands for JIRA and select it or type "//jira or //JIRA" as this will be used as identifier for `AI Code Companion` to work with JIRA. See below screenshot as an example:
+    <br /><img src="./assets-readme/jira-widget-before-login.jpg" alt="JIRA Widget before Login" width="47%" /> <img src="./assets-readme/jira-widget-post-login.jpg" alt="JIRA Widget after Login" width="47%" />
+    <br /><img src="./assets-readme/jira-sample-prompt.jpg" alt="JIRA Sample Prompt with Response" width="47%" />
+- Provide capability to have multiple Tabs to work with ease, having separate context for each Tab.
+- Generate any type of diagrams from prompt or from the provided code, Simply select the code from files and ask it to create flow diagrams and save them for your Solution Design docs.
+  <br /><img src="./assets-readme/diagrams-sample-prompt.jpg" alt="Sample Prompt for Diagram generation" width="47%" /> <img src="./assets-readme/diagrams-sequence.jpg" alt="Sample Sequence Diagram for prompt" width="47%" />
+  <br /><img src="./assets-readme/diagrams-flow.jpg" alt="Sample Flow Diagram for prompt" width="47%" />
+- Provide capability to upload Images or SVG to write code, just upload the Figma Images and get your Components created with all required dependencies including CSS Styles. You can also use this feature to write code or explain the provided diagrams.
+- Auto validation of complete code file to identify potential Run Time errors available in code with details to fix them. You can disable this feature from settings and manually run the command `Validate Code for Potential Runtime Errors` to do the validation for a file.
+- Very easy to add Context from multiple files to your prompt, please refer below screenshots to see how you can add files/Folders and Specific methods/code blocks as context to speed up the development and get quality code generation based on your context:
+  - Select the Code and say `Add Code as Extra Context to Prompt` with right click context menu, refer the first screenshot "add-code-block-as-context".
+  - Right click on file/folder in explorer or editor and say `Add File as Extra Context to Prompt`, refer the second & third screenshots "add-code-file-as-context" and "add-code-file-as-context-from-editor".
+  - Simply open a Complete File explorer and attach either code blocks or files as context, refer the fourth screenshot "add-code-block-files-as-context-from-explorer".
+    <br /><img src="./assets-readme/add-code-block-as-context.jpg" alt="Add selected code block as Context" width="47%" /> <img src="./assets-readme/add-code-file-as-context.jpg" alt="Add file as context from file explorer" width="47%" />
+    <br /><img src="./assets-readme/add-code-file-as-context-from-editor.jpg" alt="Add file as context from editor" width="47%" /> <img src="./assets-readme/add-code-block-files-as-context-from-explorer.jpg" alt="Add file as context from External Companion Explorer" width="47%" />
 - `Automated Code Reviews` for your `GIT` changes, with just one click of a button you can now review the changes in your GIT repository. `AI Code Companion` will go through all of your GIT changes(modified and added files) and provide you comments. You can also provide your custom prompt message while running the code review action. You can play around this by running it multiple times to get different perspectives and improve code quality.
   - You can use this feature by two ways:
     - Either with help of Button `Review GIT Changes and create notes for your PR` provided in the Extension Interface or by Running the Command for same from command palatte(refer below screenshots)
@@ -61,6 +77,7 @@ This Visual Studio extension is designed to enhance the productivity of engineer
   - How to use this feature:
     - Open the Component Generator either by opening it from menu(Click on three dots next to Settings icon in the Extension Title bar) or by running the command `AI Code Companion: Generate UI Components`. For more information, refer to the screenshot below, and watch the video provided above on how to use the extension:
       <br /><img src="./assets-readme/extension-generate-ui-components.jpg" alt="Automated component generation with Gen AI" width="90%" />
+- Provide an easy approach to see the differences in the existing and code generated by Companion.
 - Multiple options to interact with AI provider for asking questions and increase productivity:
 
   - Context Menu Commands for quick access to common tasks like refactor code, find issues, explain and document code etc. Select the code in file and right click to access these commands. (refer below first screenshot).
@@ -181,6 +198,9 @@ To start conversation with AI Code Companion you need to provide your AI Provide
 #### Settings usage:
 
 - `AI Code Companion: Api Key`: Default: `OpenAI`: Allows you to select one of the AI Provider from the predefined list.
+- `AI Code Companion: Enable APIStreaming`: Default: `True`: Allows you to get fastest responses with Streaming when it is supported by API Provider(Currently Supported for Open AI).
+- `AI Code Companion: Enable Atlassian Jira Confluence Drawer`: Default: `True`: Allows you to login with your Atlassian JIRA Cloud Login and work directly with JIRA from `AI Code Companion`, like to fetch JIRA Story and write code for that.
+- `AI Code Companion: Enable Auto File Validation For Run Time Errors`: Default: `False`: Allows users to validate any file for potential Run Time Errors like Null Checks missing and provide report with code references. If this is enabled then any file you open for first time will be automatically validated. You can also run this with VS Code Command `Validate Code for Potential Runtime Errors`.
 - `AI Code Companion: Max Tokens`: Default: `800`: Allow you to change the max tokens to be used for API response.
 - `AI Code Companion: Model Max Tokens Length`: Default: `4096`: Allow users to provide the maximum length of tokens allowed for the model in one request, going to be used for logic to trim chat history. Please look for the maximum tokens allowed for the AI model you are using
 - `AI Code Companion: Model Name`: Default: `gpt-3.5-turbo`: Allows you to change Model name used for your AI provider.
@@ -188,6 +208,7 @@ To start conversation with AI Code Companion you need to provide your AI Provide
 - `AI Code Companion: Top_P`: Default: `0.6`: Allows you to change the value for Top_P.
 - `AI Code Companion: Enable Logs`: Default: `false`: Allows you to enable/disable logs for debugging
 - `AI Code Companion: Enable User Prompt For Code Review`: Default: `true`: Allows you to enable/disable Input Prompt to take Prompt Message for additional code review context
+- `AI Code Companion: User Name`: Default: `You`: Allows user to have a personal touch by showing your own used name in Chat.
 
 ## :sparkles: A Note to Contributors :sparkles:
 
@@ -202,10 +223,11 @@ A heartfelt thanks to these champs who have helped us enhance our project, eithe
 - <img src="https://images.weserv.nl/?url=github.com/engamankumar.png?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="50" height="50" alt="Aman Kumar" align="middle" /> &nbsp;[Aman Kumar](https://github.com/engamankumar)
 
   - Theming for the Chat Interface, Defect callouts in features.
+  - Added capability to show Difference in existing and generated code by Companion.
 
-- <img src="https://images.weserv.nl/?url=github.com/SoumyaDandapat.png?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="50" height="50" alt="Soumya Dandapat" align="middle" /> &nbsp;[Soumya Dandapat](https://github.com/SoumyaDandapat)
+- <img src="https://images.weserv.nl/?url=github.com/shreysudan.png?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="50" height="50" alt="Soumya Dandapat" align="middle" /> &nbsp;[Shrey Sudan](https://github.com/shreysudan)
 
-  - Defect callouts in features.
+  - Added Multi Tabs Capability
 
 - <img src="https://images.weserv.nl/?url=github.com/surensubhu.png?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="50" height="50" alt="Surender Natarajan" align="middle" /> &nbsp;[Surender Natarajan](https://github.com/surensubhu)
   - Integrated Azure Open AI endpoint as one of the AI Provider to work with `AI Code Companion`.
