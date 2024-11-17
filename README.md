@@ -9,6 +9,11 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 - Install the extension either by visiting Visual Studio Code [marketplace page](https://marketplace.visualstudio.com/items?itemName=vikash-bhardwaj.aicodecompanion) or search the extension in the "Extensions" activity bar tab with name "AI Code Companion" by vikash-bhardwaj
 - Post installation please refer to the below [set-up section](#setup)
 - <strong style="color: red">Important!!</strong> - Post setting up the accesskey for your selcted AI provider please ensure you also check the model name in the settings. If you are using `PSChat` as your AI Data Provider then please change the model name because default model name will not work as is with PSChat. While you can check the respective AI Provider docs for all model names provided by your AI Provider, you can use `gpt-3.5-turbo` or `gpt-3.5-turbo-16k` for OpenAI & `gpt35turbo` or `gpt4` For PSChat.
+- <strong style="color: red">**Note for local `Ollama` Models integration to work without Internet**</strong> - Please download and install `Ollama` and start it to work with different `Ollama` Models.
+  - Download the installer and install `Ollala` from <a href="https://ollama.com/download">Download Ollama Page</a>
+  - Follow the docs to download the model of your choice by following the - <a href="https://github.com/ollama/ollama">Documentation page</a>
+  - Once yuu download the model, open extension settings and change the `API Key` dropdown value to `Ollama Chat` and update `Model Name` field with downloaded model like "llama3.2:latest" or "Mistral" or "llava", etc. (Please change the settings in "Workspace" Tab in case that exist as "Users" Tab setting wont work if Workspace Tab exist).
+  - In case you have higher configuration machine to run local models then you can also play around changing the `Model Max Token Length` to higher number like `64000` for retaining the longer chat context in history. For my 18GB RAM I was not able to go above `32000` as it was turning to be so slow to respond.
 - <strong style="color: red">**Note for `Azure Open AI` Set-up**</strong> - Extension has ability to connect to Azure OpenAI API through `API Key Authentication` and `Microsoft Entra Authentication` method. Please refer [Azure OpenAI Service REST API reference](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference) for more information on authenticating for Azure Open AI.
 
   If you choose to use Azure OpenAI as your service provider, follow these steps to set up the API Endpoint for extension before referring to the below [set-up section](#setup):
@@ -60,11 +65,16 @@ This Visual Studio extension is designed to enhance the productivity of engineer
 - Provide capability to upload Images or SVG to write code, just upload the Figma Images and get your Components created with all required dependencies including CSS Styles. You can also use this feature to write code or explain the provided diagrams.
 - Auto validation of complete code file to identify potential Run Time errors available in code with details to fix them. You can disable this feature from settings and manually run the command `Validate Code for Potential Runtime Errors` to do the validation for a file.
 - Very easy to add Context from multiple files to your prompt, please refer below screenshots to see how you can add files/Folders and Specific methods/code blocks as context to speed up the development and get quality code generation based on your context:
+  - Use `@` keyword as trigger sequence in Chat Input Box to attach different type of context like opened files from editor, files from Workspace, Code Blocks, Images.
+  - Use `/` keyword as trigger sequence in Chat Input Box to open the files drawer for adding them as context from any of the opened files in editor to your prompt. You can filter the list with typing the file name with slash keyword.
+  - Use `#` keyword as trigger sequence in Chat Input Box to open the Workspace drawer for adding files as context to your prompt.
   - Select the Code and say `Add Code as Extra Context to Prompt` with right click context menu, refer the first screenshot "add-code-block-as-context".
   - Right click on file/folder in explorer or editor and say `Add File as Extra Context to Prompt`, refer the second & third screenshots "add-code-file-as-context" and "add-code-file-as-context-from-editor".
   - Simply open a Complete File explorer and attach either code blocks or files as context, refer the fourth screenshot "add-code-block-files-as-context-from-explorer".
     <br /><img src="./assets-readme/add-code-block-as-context.jpg" alt="Add selected code block as Context" width="47%" /> <img src="./assets-readme/add-code-file-as-context.jpg" alt="Add file as context from file explorer" width="47%" />
-    <br /><img src="./assets-readme/add-code-file-as-context-from-editor.jpg" alt="Add file as context from editor" width="47%" /> <img src="./assets-readme/add-code-block-files-as-context-from-explorer.jpg" alt="Add file as context from External Companion Explorer" width="47%" />
+    <br /><img src="./assets-readme/extension-at-the-rate-drawer.jpg" alt="At the rate Context Drawer" width="47%" /> <img src="./assets-readme/extension-attach-files-with-files-drawer.jpg" alt="Attach file Drawer with slash key" width="47%" />
+    <br /><img src="./assets-readme/extension-attach-files-with-workspace-drawer.jpg" alt="Attach files from workspace drawer with hash key" width="47%" /> <img src="./assets-readme/add-code-file-as-context-from-editor.jpg" alt="Add file as context from editor" width="47%" />
+    <br /><img src="./assets-readme/add-code-block-files-as-context-from-explorer.jpg" alt="Add file as context from External Companion Explorer" width="47%" />
 - `Automated Code Reviews` for your `GIT` changes, with just one click of a button you can now review the changes in your GIT repository. `AI Code Companion` will go through all of your GIT changes(modified and added files) and provide you comments. You can also provide your custom prompt message while running the code review action. You can play around this by running it multiple times to get different perspectives and improve code quality.
   - You can use this feature by two ways:
     - Either with help of Button `Review GIT Changes and create notes for your PR` provided in the Extension Interface or by Running the Command for same from command palatte(refer below screenshots)
@@ -248,6 +258,15 @@ This extension collects certain data for the purpose of interacting with APIs pr
 - If Inline comment execution is in progress then Code Review for GIT changes will not work or vice versa
 
 ## <a name="release-notes"></a>Release Notes
+
+### [2.1.0]
+
+#### New Features
+
+- Added Capability to work with local `Ollama` models which allow users to work with AI without internet connection.
+- Added Capability to make the attach file as context much more easy with `@` keyword from Chat Input Box. With this feature users can simply type `@` to open all options to attach different type of context. Users can also use `/` to open the Opened files drawer in editor to attach them as context and similarly use `#` to open Workspace Drawer to add any file as context from workspace.
+- Fixed a defect where Attach Code as Context window was not working.
+- Redesigned the attach context Button.
 
 ### [2.0.0]
 
