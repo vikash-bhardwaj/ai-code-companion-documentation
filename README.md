@@ -263,7 +263,7 @@ This extension collects certain data for the purpose of interacting with APIs pr
 
 #### New Features
 
-- Added Capability to work with local `Ollama` models which allow users to work with AI without internet connection.
+- Added Capability to work with local `Ollama` models which allow users to work with AI without internet connection. Please look at the above installation section for more details regarding setting up Ollama and running the same in `AI Code Companion`.
 - Added Capability to make the attach file as context much more easy with `@` keyword from Chat Input Box. With this feature users can simply type `@` to open all options to attach different type of context. Users can also use `/` to open the Opened files drawer in editor to attach them as context and similarly use `#` to open Workspace Drawer to add any file as context from workspace.
 - Fixed a defect where Attach Code as Context window was not working.
 - Redesigned the attach context Button.
